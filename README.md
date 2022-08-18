@@ -1,2 +1,2 @@
-# P.I_Front-end
+# CafeteriaJS
 Starting to developing a website for college homework 
