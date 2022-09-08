@@ -55,8 +55,8 @@ main {
     text-align: center;
 }
 .bebidas {
-    padding: 100px, 100px;
     
+    padding: 100px, 100px;
 }
 .lanches {
     
@@ -69,9 +69,17 @@ main {
 div img {
     width: 653.65px;
     height: 653.65px;
-    border: 2px solid #F0DB4F;   
+    border: 2px solid #F0DB4F;
+    background-image: linear-gradient(to top, black, white);
+    
+    
   }
-
-  
-
+.cafe-expresso {
+    border: 2px solid #F0DB4F;
+    background-image: linear-gradient(to bottom, white, black), url('./assets/images/café-expresso.png');
+    width: 653.65px;
+    height: 653.65px;
+    background-repeat: no-repeat;
+    background-size: 653.65px 653.65px;
+}
 
