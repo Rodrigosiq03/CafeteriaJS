@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1E1E1E;
+    border: 2px solid #F0DB4F;
 }
 li, a {
     font-family: 'Roboto', sans-serif;
@@ -16,33 +17,25 @@ li, a {
     height: 20px;
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 10%;
 }
 .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    background-color: #F0DB4F;
+    height: 20px;
     list-style: none;
     padding: 50px 60px;
-}
-.nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
-    align-items: center;
-    padding-left: 100px;
 }
 .nav-links li a {
     transition: all 0.3 ease 0s;
 }
 .nav-links li a:hover {
-    color: #504A4A;
+    color: #969191;
 }
 
-ul {
-    margin: 0;
-    background-color: #F0DB4F;
-    height: 20px;
-}
 i {
     background-color: #F0DB4F;
     height: 30px;
