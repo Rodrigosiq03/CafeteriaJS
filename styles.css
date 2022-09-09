@@ -51,24 +51,48 @@ main {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
 }
 .bebidas {
+    display: flex;
+    justify-content: center;
     padding: 100px, 100px;
-    
+}
+.precos-bebidas {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
 }
 .lanches {
-    
+    display: flex;
+    justify-content: center;
     padding: 100px, 100px;
+}
+.img-lanches {
+    padding-top: 45px;
+}
+.precos-lanches {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
 }
 .pratos {
-    
+    display: flex;
+    justify-content: center;
     padding: 100px, 100px;
 }
+.img-pratos {
+    padding-top: 40px;
+}
+.precos-pratos {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
 div img {
-    width: 653.65px;
-    height: 653.65px;
+    width: 300px;
+    height: 300px;
     border: 2px solid #F0DB4F;   
   }
 
