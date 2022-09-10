@@ -1,83 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CafeteriaJS</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="nav-links">
-                    <div>
-                    <li>
-                        <a href="pages/index.html">
-                            <div class="home-icon">
-                                <i class="fa fa-house" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                    </li>
-                    </div>
-                    <div>
-                    <li>|</li>
-                    </div>
-                    <div>
-                    <li>
-                        <a href="./cardapio.html">Cardápio</a>
-                    </li>
-                    </div>
-                    <div>
-                        <li>|</li>
-                    </div>
-                    
-                    <li>
-                        <a href="#">Agendamento de Pedido</a>
-                    </li>
-                    <div>
-                        <li>|</li>
-                    </div>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                    <div>
-                        <li>|</li>
-                    </div>
-                    <li>
-                        <a href="#">Sobre nós</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CafeteriaJS</title>
+  </head>
 
-        <main>
-            <h1>CafeteriaJS</h1>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      border: 2px solid #f0db4f;
+    }
+    li,
+    a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1e1e1e;
+      text-decoration: none;
+      background-color: #f0db4f;
+      height: 20px;
+    }
 
-            <!-- Todo: Fazer com que essa foto mude quando clicarmos na seta -->
-            <!-- Ao clicar, a foto e a descrição devem ser alterados -->
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0;
+      background-color: #f0db4f;
+      height: 20px;
+      list-style: none;
+      padding: 50px 60px;
+    }
+    .nav-links li a {
+      transition: all 0.3 ease 0s;
+    }
+    .nav-links li a:hover {
+      color: #969191;
+    }
 
-            <div class="cards" id="card-pratos-do-dia">
-                <h2 id="texto-prato-do-dia">Pratos do dia:</h2>
-                <img src="http://www.saboresajinomoto.com.br/uploads/images/recipes/sanduiche-de-churrasco.jpg" alt="Foto de um x churrasco" width="400">
-                <p id="texto-descricao-prato"> Pao com churrasco - R&dollar; 8,00</p>
-            </div>
+    i {
+      background-color: #f0db4f;
+      height: 30px;
+    }
+    main {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      /* text-align: center; */
+    }
+  </style>
 
-            <!-- Todo: Dar uma função para esse card -->
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <div>
+            <li>
+              <a href="pages/index.html">
+                <div class="home-icon">
+                  <i class="fa fa-house" aria-hidden="true"></i>
+                </div>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>|</li>
+          </div>
+          <div>
+            <li>
+              <a href="./cardapio.html">Cardápio</a>
+            </li>
+          </div>
+          <div>
+            <li>|</li>
+          </div>
 
-            <div class="cards" id="card-sem-funcao-ainda" >
-                <img src="https://www.viajadora.com/wp-content/uploads/2014/08/macaco-comendo-banana-rio-do-peixe-bonito.jpg" width="400" alt="">
-            </div>
+          <li>
+            <a href="#">Agendamento de Pedido</a>
+          </li>
+          <div>
+            <li>|</li>
+          </div>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+          <div>
+            <li>|</li>
+          </div>
+          <li>
+            <a href="#">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <div id="texto-sobre-nos">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit ex necessitatibus non sint repellat, accusantium earum odit nulla nobis?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse. Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero nisi expedita! Eius, libero.
-                </p>
-            </div>
+    <main>
+      <h1>CafeteriaJS</h1>
 
-        </main>
+      <!-- Todo: Fazer com que essa foto mude quando clicarmos na seta -->
+      <!-- Ao clicar, a foto e a descrição devem ser alterados -->
 
-    </body>
+      <div class="cards" id="card-pratos-do-dia">
+        <h2 id="texto-prato-do-dia">Pratos do dia:</h2>
+        <img
+          src="http://www.saboresajinomoto.com.br/uploads/images/recipes/sanduiche-de-churrasco.jpg"
+          alt="Foto de um x churrasco"
+          width="400"
+        />
+        <p id="texto-descricao-prato">Pao com churrasco - R&dollar; 8,00</p>
+      </div>
+
+      <!-- Todo: Dar uma função para esse card -->
+
+      <div class="cards" id="card-sem-funcao-ainda">
+        <img
+          src="https://www.viajadora.com/wp-content/uploads/2014/08/macaco-comendo-banana-rio-do-peixe-bonito.jpg"
+          width="400"
+          alt=""
+        />
+      </div>
+
+      <div id="texto-sobre-nos">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+          illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
+          ex necessitatibus non sint repellat, accusantium earum odit nulla
+          nobis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+          blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
+          Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
+          nisi expedita! Eius, libero.
+        </p>
+      </div>
+    </main>
+  </body>
 </html>
