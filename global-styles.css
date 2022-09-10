@@ -16,9 +16,9 @@ li, a {
     background-color: #F0DB4F;
     height: 20px;
 }
-header{
+/* header{
     padding: 30px 10%;
-}
+} */
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -47,3 +47,7 @@ main {
     font-size: 24px;
 }
 
+div img {
+    width: 400px;
+    border: 2px solid #F0DB4F;   
+  }
