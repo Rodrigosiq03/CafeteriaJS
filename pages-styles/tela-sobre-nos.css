@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+  padding: 10px 15px;
+  width: 50%;
+  display: inline-block;
+}
+
+
+
+img{
+    display: inline-block;
+    position: relative;
+    left: 60%;
+    top: -350px;
+}
