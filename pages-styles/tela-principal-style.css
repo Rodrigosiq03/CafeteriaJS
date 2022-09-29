@@ -7,8 +7,8 @@ main{
     text-align: justify;
     
     position: relative;
-    bottom: 600px;
-    left: 900px;
+    top: -600px;
+    left: 40%;
 }
 
 h1{

@@ -16,9 +16,7 @@ li, a {
     background-color: #F0DB4F;
     height: 20px;
 }
-/* header{
-    padding: 30px 10%;
-} */
+
 .nav-links {
     display: flex;
     flex-direction: row;
