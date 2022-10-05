@@ -7,9 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CafeteriaJS</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="../global-styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="../pages-styles/tela-principal-style.css" />
+
+
 </head>
 
 <body>
@@ -59,54 +64,37 @@
   <main>
     <h1>CafeteriaJS</h1>
 
-    <!-- Todo: Fazer com que essa foto mude quando clicarmos na seta -->
-    <!-- Ao clicar, a foto e a descrição devem ser alterados -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="cards" id="card-pratos-do-dia">
+            <h2 id="texto-prato-do-dia">Pratos do dia:</h2>
+            <img src="http://www.saboresajinomoto.com.br/uploads/images/recipes/sanduiche-de-churrasco.jpg"
+              alt="Foto de um x churrasco" />
+            <p id="texto-descricao-prato">Pao com churrasco - R&dollar; 8,00</p>
+          </div>
 
-    <div class="cards" id="card-pratos-do-dia">
-      <h2 id="texto-prato-do-dia">Pratos do dia:</h2>
-      <img src="http://www.saboresajinomoto.com.br/uploads/images/recipes/sanduiche-de-churrasco.jpg"
-        alt="Foto de um x churrasco" />
-      <p id="texto-descricao-prato">Pao com churrasco - R&dollar; 8,00</p>
-    </div>
+          <div class="cards" id="card-doces">
+            <img src="https://live.staticflickr.com/1053/5117624772_158d8449a8_b.jpg" alt="" />
+          </div>
 
-    <!-- Todo: Dar uma função para esse card -->
+        </div>
 
-    <div class="cards" id="card-sem-funcao-ainda">
-      <img src="https://www.viajadora.com/wp-content/uploads/2014/08/macaco-comendo-banana-rio-do-peixe-bonito.jpg"
-        alt="" />
-    </div>
-
-    <div id="texto-sobre-nos">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-        illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
-        ex necessitatibus non sint repellat, accusantium earum odit nulla
-        nobis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-        blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
-        Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
-        nisi expedita! Eius, libero.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-        illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
-        ex necessitatibus non sint repellat, accusantium earum odit nulla
-        nobis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-        illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
-        ex necessitatibus non sint repellat, accusantium earum odit nulla
-        nobis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-        illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
-        ex necessitatibus non sint repellat, accusantium earum odit nulla
-        nobis?
-      </p>
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+            illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
+            ex necessitatibus non sint repellat, accusantium earum odit nulla
+            nobis?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
+            Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
+            nisi expedita! Eius, libero.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
 </body>
