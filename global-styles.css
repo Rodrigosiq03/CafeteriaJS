@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --amarelo: #F0DB4F;
+    --fundo: #2B2B2B;
+    --cinza: #616161;
+    --branco: #FFFFFF;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fundo);
+    border: 2px solid var(--amarelo);
+}
+li, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--fundo);
+    text-decoration: none;
+    background-color: var(--amarelo);
+    height: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    background-color: var(--amarelo);
+    height: 20px;
+    list-style: none;
+    padding: 50px 60px;
+}
+.nav-links li a {
+    transition: all 0.3 ease 0s;
+}
+.nav-links li a:hover {
+    color: var(--cinza);
+}
+
+i {
+    background-color: var(--amarelo);
+    height: 30px;
+}
+main {
+    color: var(--branco);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+div img {
+    width: 400px;
+    border: 2px solid var(--amarelo);   
+  }
