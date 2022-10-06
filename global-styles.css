@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --amarelo: #F0DB4F;
+    --fundo: #2B2B2B;
+    --cinza: #616161;
+    --branco: #FFFFFF;
+}
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1E1E1E;
-    border: 2px solid #F0DB4F;
+    background-color: var(--fundo);
+    border: 2px solid var(--amarelo);
 }
 li, a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #1E1E1E;
+    color: var(--fundo);
     text-decoration: none;
-    background-color: #F0DB4F;
+    background-color: var(--amarelo);
     height: 20px;
 }
 
@@ -22,7 +28,7 @@ li, a {
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
-    background-color: #F0DB4F;
+    background-color: var(--amarelo);
     height: 20px;
     list-style: none;
     padding: 50px 60px;
@@ -31,15 +37,15 @@ li, a {
     transition: all 0.3 ease 0s;
 }
 .nav-links li a:hover {
-    color: #969191;
+    color: var(--cinza);
 }
 
 i {
-    background-color: #F0DB4F;
+    background-color: var(--amarelo);
     height: 30px;
 }
 main {
-    color: white;
+    color: var(--branco);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -47,5 +53,5 @@ main {
 
 div img {
     width: 400px;
-    border: 2px solid #F0DB4F;   
+    border: 2px solid var(--amarelo);   
   }
