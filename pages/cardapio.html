@@ -1,173 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../global-styles.css">
-    <link rel="stylesheet" href="../pages-styles/cardapio-style.css">
-    <title>CafeteriaJS</title>
-</head>
-
-<body>
-    <nav>
-        <ul class="nav-links">
-            <div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="../global-styles.css">
+        <link rel="stylesheet" href="../pages-styles/cardapio-style.css">
+        <!-- <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"> -->
+        <title>CafeteriaJS</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-links">
+                <div>
+                    <li>
+                        <a href="index.html">
+                            <div class="home-icon">
+                                <i class="fa fa-house" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div>
+                    <li>|</li>
+                </div>
+                <div>
+                    <li>
+                        <a href="./cardapio.html">Cardápio</a>
+                    </li>
+                </div>
+                <div>
+                    <li>|</li>
+                </div>
                 <li>
-                    <a href="index.html">
-                        <div class="home-icon">
-                            <i class="fa fa-house" aria-hidden="true"></i>
-                        </div>
-                    </a>
+                    <a href="./carrinho.html">Agendamento de Pedido</a>
                 </li>
-            </div>
-            <div>
-                <li>|</li>
-            </div>
-            <div>
+                <div>
+                    <li>|</li>
+                </div>
                 <li>
-                    <a href="./cardapio.html">Cardápio</a>
+                    <a href="#">Contato</a>
                 </li>
+                <div>
+                    <li>|</li>
+                </div>
+                <li>
+                    <a href="sobre-nos.html">Sobre nós</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 class="title1">Cafés</h1>
+            <p class="underline-title">____________________________________________________________________________________________________________________</p>
+            <div class="bebidas">
+                <div class="precos-bebidas">
+                    <div class="expresso">
+                        <p>Expresso</p>
+                        <p>R$8</p>
+                    </div>
+                    <div class="cappucino">
+                        <p>Cappucino</p>
+                        <p>R$10</p>
+                    </div>
+                    <divv class="frapuccino">
+                        <p>Frappucino</p>
+                        <p>R$13</p>
+                    </divv>
+                    <divv class="cafecleite">
+                        <p>Café com leite</p>
+                        <p>R$8</p>
+                    </divv>
+                </div>
+                <div class="img-bebidas">
+                    <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
+                </div>
             </div>
-            <div>
-                <li>|</li>
+            <h1>Lanches</h1>
+            <div class="lanches">
+                <div class="precos-lanches">
+                    <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
+                    <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                    <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                </div>
+                <div class="img-lanches">
+                    <img src="../assets/images/misto-quente.jpg" alt="bauru">
+                </div>
             </div>
-
-            <li>
-                <a href="./carrinho.html">Agendamento de Pedido</a>
-            </li>
-            <div>
-                <li>|</li>
+            <h1>Pratos</h1>
+            <div class="pratos">
+                <div class="precos-pratos">
+                    <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+                    <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
+                    <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
+                    <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
+                    <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+                </div>
+                <div class="img-pratos">
+                    <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
+                </div>
             </div>
-            <li>
-                <a href="#">Contato</a>
-            </li>
-            <div>
-                <li>|</li>
+            <h1>Cafés</h1>
+            <div class="bebidas">
+                <div class="precos-bebidas">
+                    <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
+                    <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                    <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                </div>
+                <div class="img-bebidas">
+                    <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
+                </div>
             </div>
-            <li>
-                <a href="sobre-nos.html">Sobre nós</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Cafés</h1>
-        <div class="bebidas">
-            <div class="precos-bebidas">
-                <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+            <h1>Lanches</h1>
+            <div class="lanches">
+                <div class="precos-lanches">
+                    <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
+                    <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                    <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                </div>
+                <div class="img-lanches">
+                    <img src="../assets/images/misto-quente.jpg" alt="bauru">
+                </div>
             </div>
-            <div class="img-bebidas">
-                <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
+            <h1>Pratos</h1>
+            <div class="pratos">
+                <div class="precos-pratos">
+                    <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+                    <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
+                    <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
+                    <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
+                    <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+                </div>
+                <div class="img-pratos">
+                    <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
+                </div>
             </div>
-        </div>
-        <h1>Lanches</h1>
-        <div class="lanches">
-            <div class="precos-lanches">
-                <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+            <h1>Cafés</h1>
+            <div class="bebidas">
+                <div class="precos-bebidas">
+                    <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
+                    <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                    <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                </div>
+                <div class="img-bebidas">
+                    <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
+                </div>
             </div>
-            <div class="img-lanches">
-                <img src="../assets/images/misto-quente.jpg" alt="bauru">
+            <h1>Lanches</h1>
+            <div class="lanches">
+                <div class="precos-lanches">
+                    <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
+                    <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                    <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+                    <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+                </div>
+                <div class="img-lanches">
+                    <img src="../assets/images/misto-quente.jpg" alt="bauru">
+                </div>
             </div>
-        </div>
-        <h1>Pratos</h1>
-        <div class="pratos">
-            <div class="precos-pratos">
-                <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-                <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
-                <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
-                <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
-                <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+            <h1>Pratos</h1>
+            <div class="pratos">
+                <div class="precos-pratos">
+                    <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+                    <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
+                    <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
+                    <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
+                    <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+                </div>
+                <div class="img-pratos">
+                    <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
+                </div>
             </div>
-            <div class="img-pratos">
-                <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
-            </div>
-        </div>
-        <h1>Cafés</h1>
-        <div class="bebidas">
-            <div class="precos-bebidas">
-                <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-            </div>
-            <div class="img-bebidas">
-                <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
-            </div>
-        </div>
-        <h1>Lanches</h1>
-        <div class="lanches">
-            <div class="precos-lanches">
-                <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-            </div>
-            <div class="img-lanches">
-                <img src="../assets/images/misto-quente.jpg" alt="bauru">
-            </div>
-        </div>
-        <h1>Pratos</h1>
-        <div class="pratos">
-            <div class="precos-pratos">
-                <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-                <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
-                <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
-                <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
-                <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-            </div>
-            <div class="img-pratos">
-                <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
-            </div>
-        </div>
-        <h1>Cafés</h1>
-        <div class="bebidas">
-            <div class="precos-bebidas">
-                <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-            </div>
-            <div class="img-bebidas">
-                <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
-            </div>
-        </div>
-        <h1>Lanches</h1>
-        <div class="lanches">
-            <div class="precos-lanches">
-                <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-            </div>
-            <div class="img-lanches">
-                <img src="../assets/images/misto-quente.jpg" alt="bauru">
-            </div>
-        </div>
-        <h1>Pratos</h1>
-        <div class="pratos">
-            <div class="precos-pratos">
-                <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-                <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
-                <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
-                <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
-                <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-            </div>
-            <div class="img-pratos">
-                <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
-            </div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 
 </html>

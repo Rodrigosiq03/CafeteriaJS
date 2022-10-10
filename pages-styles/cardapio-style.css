@@ -1,7 +1,22 @@
-main{
+:root {
+    --amarelo: #F0DB4F;
+    --fundo: #2B2B2B;
+    --cinza: #616161;
+    --branco: #FFFFFF;
+}
+main {
     text-align: center;
 }
-
+.title1 {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-left: 100px;
+}
+.underline-title {
+    margin: 0;
+    color: var(--amarelo)
+}
 .bebidas {
     display: flex;
     justify-content: center;
@@ -11,6 +26,14 @@ main{
     display: flex;
     flex-direction: column;
     padding-right: 50px;
+}
+.expresso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+    
 }
 .lanches {
     display: flex;
