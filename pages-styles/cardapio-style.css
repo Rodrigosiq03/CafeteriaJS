@@ -5,7 +5,7 @@
     --branco: #FFFFFF;
 }
 main {
-    text-align: center;
+    text-align: center !important;
 }
 .title1 {
     display: flex;
@@ -61,9 +61,15 @@ main {
     flex-direction: column;
     padding-right: 50px;
 }
+.doces {
+    display: flex;
+    justify-content: center;
+    padding: 100px, 100px;
+}
 div img {
     width: 300px;
     height: 300px;
   }
+
 
   

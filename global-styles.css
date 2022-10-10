@@ -53,5 +53,6 @@ main {
 
 div img {
     width: 400px !important;
-    border: 2px solid var(--amarelo) !important;   
+    border: 2px solid var(--amarelo) !important;
+    
   }
