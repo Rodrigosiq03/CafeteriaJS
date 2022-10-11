@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link rel="stylesheet" href="../global-styles.css">
-        <link rel="stylesheet" href="../pages-styles/cardapio-style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="../global-styles.css">
+        <link rel="stylesheet" href="../pages-styles/cardapio-style.css">
         <title>CafeteriaJS</title>
     </head>
     <body>
@@ -42,13 +42,23 @@
               </div>
             </nav>
         </header>
+        <!-- LOGO -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm col-md-12 text-center">
+                        <img src="/assets/logos/logo_st.png" alt="Logo da CafeteriaJS" class="logo">
+                    </div>
+                </div>
+            </div>
+        </article>
         <main>
             <!-- CAFÉS -->
-            <h1 class="col-4 mt-4 mb-0">Cafés</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Cafés</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="bebidas">
                 <div class="col-8">
-                    <div class="container mt-2">
+                    <div class="container col-8 mt-2">
                         <div class="row">
                             <div class="col-6 mt-2"><p>Expresso</p></div>
                             <div class="col-3 mt-2"><p>R$8</p></div>
@@ -68,16 +78,16 @@
                     </div>
                 </div>
                 <div class="container mt-2">
-                    <div class="col-10 p-2" id="img-cafe"><img src="../assets/images/café-expresso.png" alt="cafe-expresso"></div>
+                    <div class="col-10 p-2" id="img-cafe"><img src="../assets/images/café-expresso.png" alt="cafe-expresso" class="cafe_img"></div>
                 </div>
             </div>
             <!-- LANCHES -->
-            <h1 class="col-4 mt-4 mb-0">Lanches</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Lanches</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="lanches">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="container mt-2">
-                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/misto-quente.jpg" alt="bauru"></div>
+                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/misto-quente.jpg" alt="bauru" class="lanche_img"></div>
                     </div>
                 </div>
                 <div class="container mt-2">
@@ -104,14 +114,14 @@
                 </div>
             </div>
             <!-- PRATOS -->
-            <h1 class="col-4 mt-4 mb-0">Pratos</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Pratos</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="pratos">
                 <div class="col-8">
-                    <div class="container mt-2">
+                    <div class="container col-8 mt-2">
                         <div class="row">
-                            <div class="col-6 mt-2"><p>Filet Mignon</p></div>
-                            <div class="col-3 mt-2"><p>R$30</p></div>
+                            <div class="col-6 mt-2"><p class="text-left">Filet Mignon</p></div>
+                            <div class="col-3 mt-2"><p class="text-left">R$30</p></div>
                         </div>
                         <div class="row">
                             <div class="col-6 mt-2"><p>Filé de Frango</p></div>
@@ -126,22 +136,22 @@
                             <div class="col-3 mt-2"><p>R$23</p></div>
                         </div>
                         <div class="row">
-                            <div class="col-6 mt-2"><p>Parmegiana de Filet Mignon</p></div>
+                            <div class="col-6 mt-2"><p class="text-left">Parmegiana de Filet Mignon</p></div>
                             <div class="col-3 mt-2"><p> R$30</p></div>
                         </div>
                     </div>
                 </div>
                 <div class="container mt-2">
-                    <div class="col-10 p-2" id="img-prato"><img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo"></div>
+                    <div class="col-10 p-2" id="img-prato"><img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo" class="prato_img"></div>
                 </div>
             </div>
             <!-- DOCES -->
-            <h1 class="col-4 mt-4 mb-0">Doces</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Doces</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="doces">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="container mt-2">
-                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/tiramsu.jpg" alt="bauru"></div>
+                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/tiramsu.jpg" alt="bauru" class="doce_img"></div>
                     </div>
                 </div>
                 <div class="container">
@@ -168,11 +178,11 @@
                 </div>
             </div>
             <!-- CAFÉS -->
-            <h1 class="col-4 mt-4 mb-0">Cafés</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Cafés</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="bebidas">
                 <div class="col-8">
-                    <div class="container mt-2">
+                    <div class="container col-8 mt-2">
                         <div class="row">
                             <div class="col-6 mt-2"><p>Expresso</p></div>
                             <div class="col-3 mt-2"><p>R$8</p></div>
@@ -192,16 +202,16 @@
                     </div>
                 </div>
                 <div class="container mt-2">
-                    <div class="col-10 p-2" id="img-cafe"><img src="../assets/images/café-expresso.png" alt="cafe-expresso"></div>
+                    <div class="col-10 p-2" id="img-cafe"><img src="../assets/images/café-expresso.png" alt="cafe-expresso" class="cafe_img"></div>
                 </div>
             </div>
             <!-- LANCHES -->
-            <h1 class="col-4 mt-4 mb-0">Lanches</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Lanches</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="lanches">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="container mt-2">
-                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/misto-quente.jpg" alt="bauru"></div>
+                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/misto-quente.jpg" alt="bauru" class="lanche_img"></div>
                     </div>
                 </div>
                 <div class="container mt-2">
@@ -228,11 +238,11 @@
                 </div>
             </div>
             <!-- PRATOS -->
-            <h1 class="col-4 mt-4 mb-0">Pratos</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Pratos</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="pratos">
-                <div class="col-8">
-                    <div class="container mt-2">
+                <div class="col-8 text-justify">
+                    <div class="container col-8 mt-2">
                         <div class="row">
                             <div class="col-6 mt-2"><p>Filet Mignon</p></div>
                             <div class="col-3 mt-2"><p>R$30</p></div>
@@ -256,16 +266,16 @@
                     </div>
                 </div>
                 <div class="container mt-2">
-                    <div class="col-10 p-2" id="img-prato"><img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo"></div>
+                    <div class="col-10 p-2" id="img-prato"><img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo" class="prato_img"></div>
                 </div>
             </div>
             <!-- DOCES -->
-            <h1 class="col-4 mt-4 mb-0">Doces</h1>
+            <h1 class="col-4 mt-4 mb-0 text-center">Doces</h1>
             <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
             <div class="doces">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="container mt-2">
-                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/tiramsu.jpg" alt="bauru"></div>
+                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/tiramsu.jpg" alt="bauru" class="doce_img"></div>
                     </div>
                 </div>
                 <div class="container">
