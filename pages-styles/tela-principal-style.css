@@ -5,10 +5,6 @@ main{
 #texto-sobre-nos{
     width: 50%;
     text-align: justify;
-    
-    position: relative;
-    top: -600px;
-    left: 40%;
 }
 
 h1{

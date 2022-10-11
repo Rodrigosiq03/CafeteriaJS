@@ -1,58 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --amarelo: #F0DB4F;
-    --fundo: #2B2B2B;
-    --cinza: #616161;
-    --branco: #FFFFFF;
+  --amarelo: #F0DB4F;
+  --fundo: #2B2B2B;
+  --cinza: #616161;
+  --branco: #FFFFFF;
+}
+@font-face {
+  font-family: Delicious !important;
+  src: url("assets/fonts/BRLNSR.TTF") !important;
+}
+* {
+  font: "BRLNSR" !important;
 }
 body {
-    box-sizing: border-box !important; 
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: var(--fundo) !important;
-    border: 2px solid var(--amarelo) !important;
+  box-sizing: border-box !important; 
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--fundo) !important;
+  border: 2px solid var(--amarelo) !important;
 }
 li, a {
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    color: var(--fundo) !important;
-    text-decoration: none !important;
-    background-color: var(--amarelo) !important;
-    height: 20px !important;
+  font: "BRLNSR" !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: var(--fundo) !important;
+  text-decoration: none !important;
+  background-color: var(--amarelo) !important;
+  height: 20px !important;
 }
 
-.nav-links {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-around !important;
-    margin: 0 !important;
-    background-color: var(--amarelo) !important;
-    height: 20px !important;
-    list-style: none !important;
-    padding: 50px 60px !important;
+nav {
+  background-color: var(--amarelo) !important;
+  padding: 10px 7px 0 7px !important;
 }
-.nav-links li a {
-    transition: all 0.3 ease 0s !important;
+nav a {
+  transition: all 0.3 ease 0s !important;
 }
-.nav-links li a:hover {
-    color: var(--cinza) !important;
+nav a:hover {
+  color: var(--cinza) !important;
 }
 
 i {
-    background-color: var(--amarelo) !important;
-    height: 30px !important;
+  background-color: var(--amarelo) !important;
+  height: 30px !important;
 }
 main {
-    color: var(--branco) !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 24px !important;
+  color: var(--branco) !important;
+  font: "BRLNSR" !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
 }
 
 div img {
-    width: 400px !important;
-    border: 2px solid var(--amarelo) !important;
+  width: 400px !important;
+  border: 2px solid var(--amarelo) !important;
     
   }
