@@ -63,8 +63,8 @@
     padding: 100px, 100px;
 }
 article img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: none;
 }
 
@@ -91,4 +91,3 @@ article img {
 div p {
     padding-left: 45px;
 }
-  
