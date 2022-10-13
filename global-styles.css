@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
-body {
+/* body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -48,4 +48,9 @@ main {
 div img {
     width: 400px;
     border: 2px solid #F0DB4F;   
-  }
+} */
+.home-icon {
+    color: black;
+    padding-top: 7px;
+    height: 30px;
+}
