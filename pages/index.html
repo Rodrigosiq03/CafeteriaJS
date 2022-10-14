@@ -2,136 +2,163 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CafeteriaJS</title>
-  <!-- styles -->
-  <link rel="stylesheet" href="../global-styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="../pages-styles/tela-principal-style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-
+  <!-- styles -->
+  <link rel="stylesheet" href="../global-styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../pages-styles/tela-principal-style.css"/> 
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">CafeteriaJS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#">
+  <nav class="navbar navbar-expand-lg navbar-custom fixed top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-around navbar-custom fixed top" id="navbarNav">
+        <ul class="navbar-nav navbar-custom">
+          <li>
+            <a href="index.html">
                 <div class="home-icon">
-                  <i class="fa fa-house" aria-hidden="true"></i>
+                    <i class="fa fa-house" aria-hidden="true"></i>
                 </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Agendamento de pedido</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/contato.html">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- CARROSSEL -->
-
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/assets/images/img1-carrosel1.jpg" class="d-block w-100 img-carrossel-um" alt="img1-carrosel">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.pinimg.com/originals/b7/00/74/b70074e7a2570c15e514893cc3c11274.jpg" class="d-block w-100 img-carrossel-dois" alt="img2-carrosel">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
+            </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agendamento de pedido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  </nav>
+
+
+  <!-- CARROSSEL PRATOS DO DIA-->
+
+  <div class="container carroseis">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-6">
+        <article class="carrossel-pratos-do-dia">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner prato-do-dia">
+              <div class="carousel-item active ">
+                <img src="/assets/images/img1-carrosel1.jpg" class="d-block w-100 img-pratos-um" alt="...">
+                <div class="carousel-caption d-none d-md-block h-100">
+                  <h2 class="title-pratos">Pratos do Dia</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/parmegiana.jpg" class="d-block w-100 img-pratos-dois" alt="...">
+                <div class="carousel-caption d-none d-md-block h-100">
+                  <h2 class="title-pratos">Pratos do Dia</h2>
+                </div>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <p></p>
+        <!-- CARROSSEL DOCES -->
+        
+        <article class="carrossel-doces">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner doces">
+              <div class="carousel-item active ">
+                <img src="/assets/images/petit_gateau.jpg" class="d-block w-100 img-doces-um" alt="...">
+                <div class="carousel-caption d-none d-md-block h-100">
+                  <h2 class="title-pratos">Doces</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/tiramsu.jpg" class="d-block w-100 img-doces-dois" alt="...">
+                <div class="carousel-caption d-none d-md-block h-100">
+                  <h2 class="title-pratos">Doces</h2>
+                </div>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+          illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
+          ex necessitatibus non sint repellat, accusantium earum odit nulla
+          nobis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+          blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
+          Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
+          nisi expedita! Eius, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+          illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
+          ex necessitatibus non sint repellat, accusantium earum odit nulla
+          nobis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+          blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
+          Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
+          nisi expedita! Eius, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+          blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
+          Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
+          nisi expedita! Eius, libero.
+        </p>
+      </div>
+    </div>    
   </div>
-  
-
-  <main>
-    <h1>CafeteriaJS</h1>
-    
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="cards" id="card-pratos-do-dia">
-            <h2 id="texto-prato-do-dia">Pratos do dia:</h2>
-            <img src="http://www.saboresajinomoto.com.br/uploads/images/recipes/sanduiche-de-churrasco.jpg"
-              alt="Foto de um x churrasco" />
-            <p id="texto-descricao-prato">Pao com churrasco - R&dollar; 8,00</p>
-          </div>
-
-          <div class="cards" id="card-doces">
-            <img src="https://live.staticflickr.com/1053/5117624772_158d8449a8_b.jpg" alt="" />
-          </div>
-
-        </div>
-
-        <div class="col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-            illum nihil cumque fugiat iusto in fugit tempore ipsam delectus velit
-            ex necessitatibus non sint repellat, accusantium earum odit nulla
-            nobis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-            blanditiis ipsum velit assumenda quae magnam dolorum fugiat esse.
-            Perspiciatis voluptas sapiente reiciendis eius rem recusandae libero
-            nisi expedita! Eius, libero.
-          </p>
-        </div>
-      </div>
-    </div>
-  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>

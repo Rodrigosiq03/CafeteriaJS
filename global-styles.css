@@ -1,13 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
-/* body {
+ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #1E1E1E;
     border: 2px solid #F0DB4F;
 }
-li, a {
+
+/* li, a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -30,7 +31,7 @@ li, a {
 .nav-links li a {
     transition: all 0.3 ease 0s;
 }
-.nav-links li a:hover {
+li a:hover {
     color: #969191;
 }
 
@@ -48,9 +49,19 @@ main {
 div img {
     width: 400px;
     border: 2px solid #F0DB4F;   
-} */
+}  */
 .home-icon {
     color: black;
     padding-top: 7px;
     height: 30px;
 }
+.navbar-custom {
+    background-color: #F0DB4F;
+} 
+li {
+    padding-left: 5px;
+}
+li a:hover {
+    color: #0e0d0d !important;
+}
+
