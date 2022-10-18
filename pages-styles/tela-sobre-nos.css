@@ -3,16 +3,7 @@ h1 {
 }
 p {
   text-align: justify;
-  padding: 10px 15px;
-  width: 50%;
-  display: inline-block;
+  color: white;
 }
 
 
-
-img{
-    display: inline-block;
-    position: relative;
-    left: 60%;
-    top: -350px;
-}
