@@ -1,25 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
-:root {
-    --amarelo: #F0DB4F;
-    --fundo: #2B2B2B;
-    --cinza: #616161;
-    --branco: #FFFFFF;
-}
-body {
+ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--fundo);
-    border: 2px solid var(--amarelo);
+    background-color: #1E1E1E;
+    border: 2px solid #F0DB4F;
 }
-li, a {
+
+/* li, a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: var(--fundo);
+    color: #1E1E1E;
     text-decoration: none;
-    background-color: var(--amarelo);
+    background-color: #F0DB4F;
     height: 20px;
 }
 
@@ -28,7 +23,7 @@ li, a {
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
-    background-color: var(--amarelo);
+    background-color: #F0DB4F;
     height: 20px;
     list-style: none;
     padding: 50px 60px;
@@ -36,16 +31,16 @@ li, a {
 .nav-links li a {
     transition: all 0.3 ease 0s;
 }
-.nav-links li a:hover {
-    color: var(--cinza);
+li a:hover {
+    color: #969191;
 }
 
 i {
-    background-color: var(--amarelo);
+    background-color: #F0DB4F;
     height: 30px;
 }
 main {
-    color: var(--branco);
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -53,5 +48,20 @@ main {
 
 div img {
     width: 400px;
-    border: 2px solid var(--amarelo);   
-  }
+    border: 2px solid #F0DB4F;   
+}  */
+.home-icon {
+    color: black;
+    padding-top: 7px;
+    height: 30px;
+}
+.navbar-custom {
+    background-color: #F0DB4F;
+} 
+li {
+    padding-left: 5px;
+}
+li a:hover {
+    color: #0e0d0d !important;
+}
+
