@@ -5,52 +5,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../global-styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- styles -->
+  <link rel="stylesheet" href="../global-styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   <title>Contato</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul class="nav-links">
-        <div>
-          <li>
-            <a href="index.html">
-              <div class="home-icon">
-                <i class="fa fa-house" aria-hidden="true"></i>
-              </div>
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around navbar-custom fixed top" id="navbarNav">
+          <ul class="navbar-nav navbar-custom">
+            <li>
+              <a href="index.html">
+                  <div class="home-icon">
+                      <i class="fa fa-house" aria-hidden="true"></i>
+                  </div>
+              </a>
           </li>
+            <li class="nav-item">
+              <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Agendamento de pedido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <li>|</li>
-        </div>
-        <div>
-          <li>
-            <a href="./cardapio.html">Cardápio</a>
-          </li>
-        </div>
-        <div>
-          <li>|</li>
-        </div>
-
-        <li>
-          <a href="./carrinho.html">Agendamento de Pedido</a>
-        </li>
-        <div>
-          <li>|</li>
-        </div>
-        <li>
-          <a href="#">Contato</a>
-        </li>
-        <div>
-          <li>|</li>
-        </div>
-        <li>
-          <a href="sobre-nos.html">Sobre nós</a>
-        </li>
-      </ul>
+      </div>
     </nav>
+  
   </header>
 
   <main>
