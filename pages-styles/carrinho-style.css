@@ -1,0 +1,22 @@
+.btn-continuar{
+    background-color: #f0da4f71;
+}
+
+.btn-continuar:hover{
+    background-color: #f0da4f;
+}
+
+.btn-esvaziar{
+    color: white;
+    border-color: white;
+}
+
+.btn-esvaziar:hover{
+    color: white;
+    background-color: gray;
+}
+
+.buttons{
+    position: absolute;
+
+}
