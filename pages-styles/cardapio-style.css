@@ -3,6 +3,7 @@
     --fundo: #2B2B2B;
     --cinza: #616161;
     --branco: #FFFFFF;
+    --card: #202020;
 }
 
 .title1 {
@@ -90,4 +91,33 @@ article img {
 }
 div p {
     padding-left: 45px;
+}
+
+.container-card {
+    color: var(--branco);
+    background-color: var(--card);
+    width: 1000px;
+    border: none;
+    border-radius: 20px;
+}
+.card {
+    background-color: var(--card);
+    border: none;
+    border-radius: 20px;
+}
+.button-card-expresso {
+    border-radius: 20px;
+    padding-left: 0px;
+    background-color: var(--card);
+    border: none;
+}
+
+.button-card-expresso:hover {
+    border: 3px solid var(--amarelo);
+    padding: 0px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
 }
