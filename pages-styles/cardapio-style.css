@@ -6,6 +6,8 @@
     --card: #202020;
 }
 
+/* NAVBAR STYLES */
+
 .title1 {
     display: flex;
     margin-top: 50px;
@@ -92,6 +94,8 @@ article img {
 div p {
     padding-left: 45px;
 }
+
+/* CARDS STYLES */
 
 .container-card {
     color: var(--branco);
