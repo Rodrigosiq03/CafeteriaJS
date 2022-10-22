@@ -138,16 +138,104 @@ div p {
 }
 
 /* POP UPS */
+.modal-content {
+    background-color: var(--amarelo);
+}
 
 .modal-header {
     padding: 0;
     justify-content: normal;
+    background-color: var(--amarelo);
+    border-radius: 20px 20px 0 0;
 }
 .img-pop-up {
     width: 100%;
-    height: 50%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     object-fit: cover
     
+}
+.modal-content {
+    border-radius: 20px;
+}
+.modal-dialog {
+    max-width: 550px;
+}
+
+/* MAIN STYLES */
+.pop-up-main {
+    color: var(--card);
+    
+}
+.pop-up-main p {
+    padding-left: 0;
+}
+
+/* FOOTER STYLES */
+.modal-footer {
+    border-top: 1px solid var(--card);
+}
+/* CONTADOR STYLES */
+.container-card-contador {
+    padding-right: 10px;
+    background-color: var(--amarelo);
+}
+.contador-card {
+    width: 150px;
+    height: 50px;
+    background-color: var(--branco);
+    border: 2px solid var(--card);
+    border-radius: 10px;
+    color: var(--card);
+    background-color: var(--amarelo);
+}
+.body-counter {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.minus-btn {
+    border: none;
+    background-color: var(--amarelo);
+    color: var(--card);
+    width: 50px;
+    height: 40px;
+    padding-top: 3px
+}
+.body-counter span {
+    padding-top: 5px;
+}
+.plus-btn {
+    border: none;
+    background-color: var(--amarelo);
+    color: var(--card);
+    width: 50px;
+    height: 40px;
+    padding-top: 4px;
+}
+
+
+/* ADD TO CART STYLES */
+.add-card-container {
+    width: 190px;
+    height: 50px;
+    background-color: var(--card);
+    border: 2px solid var(--card);
+    border-radius: 10px;
+    color: var(--amarelo);
+    margin: 0;
+}
+.add-card {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.button-card-add {
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--card);
+    border: 2px solid var(--card);
+    transition: transform .2s;
+}
+.add-card-body {
+    padding: 0;
 }

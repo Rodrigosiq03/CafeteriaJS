@@ -90,7 +90,7 @@
                         <div class="card-spaces">
                             <button
                                 type="button"
-                                class="button-card-expresso hover-zoom"
+                                class="button-card-expresso"
                                 data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 <div class="container-card">
@@ -378,15 +378,16 @@
         </main>
         <section>
             <!-- Modal -->
+            <!-- EXPRESSO POP UP -->
             <div
                 class="modal fade"
                 id="exampleModal"
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header img-top">
+                        <div class="modal-header">
                             <img class="img-pop-up" src="/assets/images/café-expresso.png" alt="">
                             <!-- <button
                                 type="button"
@@ -394,12 +395,77 @@
                                 data-bs-dismiss="modal"
                                 aria-label="Close"></button> -->
                         </div>
-                        <div class="modal-body">
-                            
+                        <div class="modal-body pop-up-main">
+                            <h1>Expresso</h1>
+                            <p>Um café expresso, frequentemente referido simplesmente como expresso, é um método de preparar café através da passagem de água quente, não fervente, sob alta pressão pelo café moído.Um café expresso, frequentemente referido simplesmente como expresso, é um método de preparar café através da passagem de água quente, não fervente, sob alta pressão pelo café moído.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <!-- CONTADOR -->
+                            <div class="container-card-contador">
+                                <div class="card contador-card">
+                                    <div class="card-body body-counter">
+                                        <button type="button" class="minus-btn">-</button>
+                                        <span class="counter-text">0</span>
+                                        <button type="button" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button type="button" class="button-card-add">
+                                <div class="container-card add-card-container">
+                                    <div class="card add-card">
+                                        <div class="card-body add-card-body">
+                                            <span>Adicionar ao carrinho</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PÃO NA CHAPA POP UP -->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img class="img-pop-up" src="/assets/images/café-expresso.png" alt="">
+                            <!-- <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body pop-up-main">
+                            <h1>Expresso</h1>
+                            <p>Um café expresso, frequentemente referido simplesmente como expresso, é um método de preparar café através da passagem de água quente, não fervente, sob alta pressão pelo café moído.Um café expresso, frequentemente referido simplesmente como expresso, é um método de preparar café através da passagem de água quente, não fervente, sob alta pressão pelo café moído.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- CONTADOR -->
+                            <div class="container-card-contador">
+                                <div class="card contador-card">
+                                    <div class="card-body body-counter">
+                                        <button type="button" class="minus-btn">-</button>
+                                        <span class="counter-text">0</span>
+                                        <button type="button" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button type="button" class="button-card-add">
+                                <div class="container-card add-card-container">
+                                    <div class="card add-card">
+                                        <div class="card-body add-card-body">
+                                            <span>Adicionar ao carrinho</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -410,6 +476,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
             integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
             crossorigin="anonymous"></script>
+        <script src="/scripts/cardapio.js"></script>
     </body>
 
 </html>
