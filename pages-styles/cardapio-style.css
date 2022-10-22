@@ -8,17 +8,21 @@
 
 /* NAVBAR STYLES */
 
-.title1 {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    padding-left: 100px;
+/* CARDAPIO STYLES */
+
+.margin-h1 {
+    margin-left: 200px;
+    margin-right: 200px;
 }
-.underline-title {
-    text-align: center;
-    margin: 0;
-    color: var(--amarelo)
+
+.h1-title {
+    border-bottom: 1px solid var(--amarelo);
+    margin: 0px 0px 0px 0px !important;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 3%;
 }
+
 .bebidas {
     display: flex;
     justify-content: center;
@@ -111,17 +115,35 @@ div p {
 }
 .button-card-expresso {
     border-radius: 20px;
-    padding-left: 0px;
     background-color: var(--card);
-    border: none;
+    border: 2px solid var(--card);
+    transition: transform .2s;
 }
 
 .button-card-expresso:hover {
-    border: 3px solid var(--amarelo);
-    padding: 0px;
+    border: 2px solid var(--amarelo);
+    transform: scale(1.05);
 }
 
 .card-body {
     display: flex;
     justify-content: space-between;
+}
+.card-spaces {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.cards-pratos {
+    padding-left: 10px;
+}
+
+/* POP UPS */
+
+.modal-header {
+    padding: 0;
+    justify-content: normal;
+}
+.img-pop-up {
+    border-radius: 25px;
+    position: relative;
 }

@@ -6,20 +6,17 @@
   --cinza: #616161;
   --branco: #FFFFFF;
 }
-@font-face {
-  font-family: Delicious !important;
-  src: url("assets/fonts/BRLNSR.TTF") !important;
-}
-* {
-  font: "BRLNSR" !important;
-}
+
 body {
   box-sizing: border-box !important; 
   margin: 0 !important;
   padding: 0 !important;
   background-color: var(--fundo) !important;
   border: 2px solid var(--amarelo) !important;
+  color: var(--branco);
+  font-size: 16px;
 }
+/* 
 li, a {
   font: "BRLNSR" !important;
   font-weight: 400 !important;
@@ -51,9 +48,24 @@ main {
   font-weight: 400 !important;
   font-size: 24px !important;
 }
-/*  
+ 
 div img {
   width: 400px !important;
   border: 2px solid var(--amarelo) !important;
   }
 */
+
+.home-icon {
+    color: black;
+    padding-top: 7px;
+    height: 30px;
+  }
+.navbar-custom {
+    background-color: #F0DB4F;
+} 
+li {
+    padding-left: 5px;
+}
+li a:hover {
+    color: #0e0d0d !important;
+}

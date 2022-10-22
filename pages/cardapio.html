@@ -81,44 +81,63 @@
         </article>
         <main>
             <!-- CAFÉS -->
-            <h1 class="col-4 mt-4 mb-0 text-center">Cafés</h1>
-            <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
+            <div class="margin-h1">
+                <h1 class="h1-title">Cafés</h1>
+            </div>
             <div class="bebidas">
                 <div class="col-8">
                     <div class="container col-8 mt-2">
-                        <button class="button-card-expresso">
-                            <div class="container-card">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <span>Expresso</span>
-                                        <span>R$8</span>
+                        <div class="card-spaces">
+                            <button
+                                type="button"
+                                class="button-card-expresso hover-zoom"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Expresso</span>
+                                            <span>R$8</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </button>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p>Cappucino</p>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <p>R$10</p>
-                            </div>
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p>Frappucino</p>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <p>R$13</p>
-                            </div>
+                        <div class="card-spaces">
+                            <button class="button-card-expresso">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Capuccino</span>
+                                            <span>R$10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p>Café com leite</p>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <p>R$8</p>
-                            </div>
+                        <div class="card-spaces">
+                            <button class="button-card-expresso">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Frappuccino</span>
+                                            <span>R$15</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="card-spaces">
+                            <button class="button-card-expresso">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Café com leite</span>
+                                            <span>R$8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -130,8 +149,10 @@
                 </div>
             </div>
             <!-- LANCHES -->
-            <h1 class="col-4 mt-4 mb-0 text-center" style="padding-left: 45px;">Lanches</h1>
-            <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
+            <div class="margin-h1">
+                <h1 class="h1-title">Lanches</h1>
+            </div>
+
             <div class="lanches">
                 <div class="col-4">
                     <div class="container mt-2" style="padding-left: 75px;">
@@ -139,94 +160,136 @@
                     </div>
                 </div>
                 <div class="container mt-2">
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Pão na chapa</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$8</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Pão na Chapa</span>
+                                        <span>R$8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>À moda</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$10</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>À moda</span>
+                                        <span>R$10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Bauru</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$13</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Bauru</span>
+                                        <span>R$13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Churrasco</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$8</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Churrasco</span>
+                                        <span>R$8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Sanduíche natural</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>
-                                R$13</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Sanduíche Natural</span>
+                                        <span>R$13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
             <!-- PRATOS -->
-            <h1 class="col-4 mt-4 mb-0 text-center">Pratos</h1>
-            <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
+            <div class="margin-h1">
+                <h1 class="h1-title">Pratos</h1>
+            </div>
+
             <div class="pratos">
                 <div class="col-8">
                     <div class="container col-8 mt-2" style="padding: 0;">
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p class="text-left">Filet Mignon</p>
+                        <div class="cards-pratos">
+                            <div class="card-spaces">
+                                <button class="button-card-expresso">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Filet Mignon</span>
+                                                <span>R$30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
-                            <div class="col-3 mt-2">
-                                <p class="text-left">R$30</p>
+                            <div class="card-spaces">
+                                <button class="button-card-expresso">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Filé de Frango</span>
+                                                <span>R$25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p>Filé de Frango</p>
+                            <div class="card-spaces">
+                                <button class="button-card-expresso">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Bife a Cavalo</span>
+                                                <span>R$34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
-                            <div class="col-3 mt-2">
-                                <p>R$25</p>
+                            <div class="card-spaces">
+                                <button class="button-card-expresso">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Parmegiana de Frango</span>
+                                                <span>R$28</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p>Bife à Cavalo</p>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <p>R$34</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p>Parmegiana de Frango</p>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <p>R$23</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <p class="text-left">Parmegiana de Filet Mignon</p>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <p>
-                                    R$30</p>
+                            <div class="card-spaces">
+                                <button class="button-card-expresso">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Parmegiana de Carne</span>
+                                                <span>R$32</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -239,8 +302,10 @@
                 </div>
             </div>
             <!-- DOCES -->
-            <h1 class="col-4 mt-4 mb-0 text-center" style="padding-right: 12px;">Doces</h1>
-            <p class="underline-title">_________________________________________________________________________________________________________________________________________________</p>
+            <div class="margin-h1">
+                <h1 class="h1-title">Doces</h1>
+            </div>
+
             <div class="doces">
                 <div class="col-4">
                     <div class="container mt-2" style="padding-left: 60px;">
@@ -248,49 +313,103 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Petit Gateau</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$30</p>
-                        </div>
+                    <div class="card-spaces mt-2">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Petit Gateau</span>
+                                        <span>R$28</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Brownie</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$25</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Brownie</span>
+                                        <span>R$25</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Taça Maravilha</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$34</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Taça Maravilha</span>
+                                        <span>R$23</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Banana Split</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$38</p>
-                        </div>
+                    <div class="card-spaces">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Banana Split</span>
+                                        <span>R$34</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="row">
-                        <div class="col-6 mt-2">
-                            <p>Tiramisu</p>
-                        </div>
-                        <div class="col-3 mt-2">
-                            <p>R$42</p>
-                        </div>
+                    <div class="card-spaces mb-2">
+                        <button class="button-card-expresso">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Tiramisu</span>
+                                        <span>R$40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
         </main>
+        <section>
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header img-top">
+                            <img class="img-pop-up" src="/assets/images/café-expresso.png" alt="">
+                            <!-- <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
