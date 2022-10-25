@@ -1,3 +1,75 @@
+:root {
+    --amarelo: #F0DB4F;
+    --fundo: #2B2B2B;
+    --cinza: #616161;
+    --branco: #FFFFFF;
+}
+/* HEADER */
+.rounded-logo {
+    width: 300px;
+    height: 300px;
+}
+.img-container {
+    display: block;
+}
+.cart-icon {
+    position: absolute;
+    left: 49%;
+    bottom: 70%;
+    color: var(--amarelo);
+    font-size: 20px;
+}
+
+/* MAIN */
+
+.button-card {
+    border-radius: 10px;
+    background-color: var(--cinza);
+    border: 2px solid var(--cinza);
+    transition: transform .2s;
+}
+.button-card:hover {
+    border: 2px solid var(--amarelo);
+    transform: scale(1.05);
+}
+.container-card {
+    color: var(--branco);
+    background-color: var(--);
+    width: 800px;
+    border: none;
+    border-radius: 20px;
+}
+.card {
+    background-color: var(--card);
+    border: none;
+    border-radius: 20px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: flex-start;
+}
+.icon-add {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--amarelo);
+}
+.content-icon {
+    padding-top: 13px;
+    padding-left: 2px;
+    font-size: 24px;
+    color: var(--fundo);
+}
+.add-itens-text {
+    padding-top: 7px;
+    padding-left: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+/* FOOTER */
 .btn-continuar{
     background-color: #f0da4f71;
 }
@@ -16,7 +88,6 @@
     background-color: gray;
 }
 
-.buttons{
-    position: absolute;
-
+.footer-buttons {
+    padding-bottom: 100px;
 }

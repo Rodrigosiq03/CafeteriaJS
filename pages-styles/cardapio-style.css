@@ -101,6 +101,16 @@ div p {
 
 /* CARDS STYLES */
 
+.button-card {
+    border-radius: 20px;
+    background-color: var(--card);
+    border: 2px solid var(--card);
+    transition: transform .2s;
+}
+.button-card:hover {
+    border: 2px solid var(--amarelo);
+    transform: scale(1.05);
+}
 .container-card {
     color: var(--branco);
     background-color: var(--card);
@@ -112,17 +122,6 @@ div p {
     background-color: var(--card);
     border: none;
     border-radius: 20px;
-}
-.button-card {
-    border-radius: 20px;
-    background-color: var(--card);
-    border: 2px solid var(--card);
-    transition: transform .2s;
-}
-
-.button-card:hover {
-    border: 2px solid var(--amarelo);
-    transform: scale(1.05);
 }
 
 .card-body {
@@ -203,18 +202,25 @@ div p {
 .add-card-body {
     padding: 0;
 }
-.counter-cifrao, .counter-money {
-    animation: zoom-in-zoom-out 1s ease;
 
-    @keyframes zoom-in-zoom-out {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.5);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
+/* FOOTER CART */
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.cart-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--card);
+    border: 2px solid var(--card);
+    transition: transform .2s;
+    color: var(--branco);
+}
+.cart-button:hover {
+    border: 2px solid var(--amarelo);
+    transform: scale(1.05);
+    color: var(--amarelo);
 }
