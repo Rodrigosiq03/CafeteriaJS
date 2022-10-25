@@ -113,14 +113,14 @@ div p {
     border: none;
     border-radius: 20px;
 }
-.button-card-expresso {
+.button-card {
     border-radius: 20px;
     background-color: var(--card);
     border: 2px solid var(--card);
     transition: transform .2s;
 }
 
-.button-card-expresso:hover {
+.button-card:hover {
     border: 2px solid var(--amarelo);
     transform: scale(1.05);
 }
@@ -150,6 +150,7 @@ div p {
 }
 .img-pop-up {
     width: 100%;
+    max-height: 320px;
     border-radius: 20px;
     object-fit: cover
     
@@ -175,6 +176,21 @@ div p {
     border-top: 1px solid var(--card);
 }
 /* CONTADOR STYLES */
+
+.counter-money-container {
+    padding-right: 30px;
+    font-size: 24px;
+}
+
+.counter-cifrao{
+    color: var(--card)
+
+}
+
+.counter-money {
+    color: var(--card)
+}
+
 .container-card-contador {
     padding-right: 10px;
     background-color: var(--amarelo);
@@ -238,4 +254,19 @@ div p {
 }
 .add-card-body {
     padding: 0;
+}
+.counter-cifrao, .counter-money {
+    animation: zoom-in-zoom-out 1s ease;
+
+    @keyframes zoom-in-zoom-out {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
 }

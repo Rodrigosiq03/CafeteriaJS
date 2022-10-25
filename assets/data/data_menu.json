@@ -1,0 +1,17 @@
+[
+    {
+        "id": "0",
+        "name": "Expresso",
+        "img": "/images/expresso.png"
+    },
+    {
+        "id": "1",
+        "name": "Capuccino",
+        "img": ""
+    },
+    {
+        "id": "2",
+        "name": "Frapuccino",
+        "img": ""
+    }
+]
