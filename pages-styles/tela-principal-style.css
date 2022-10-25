@@ -10,3 +10,43 @@
 h1{
     text-align: center;
 } */
+
+.rounded-logo {
+    width: 300px;
+    height: 300px;
+}
+.img-pratos-um {
+    height: 400px;
+    object-fit: cover;
+    object-position: 40% 60%;
+}
+.img-pratos-dois {
+    height: 400px;
+    object-fit: cover;
+    object-position: 40% 30%; 
+}
+.img-doces-um {
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+.img-doces-dois {
+    height: 400px;
+    object-fit: cover;
+    /* object-position: 0 80%; */
+}
+.title-pratos {
+    display: flex;
+    color: black;
+    
+}
+article {
+    border: 2px solid #F0DB4F;
+}
+.carroseis {
+    margin-top: 30px;
+}
+p {
+    color: white;
+    font-size: 24px;
+}
