@@ -1,177 +1,548 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- styles -->
-    <link rel="stylesheet" href="../global-styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link rel="stylesheet" href="../pages-styles/cardapio-style.css"/> 
-    <title>CafeteriaJS</title>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-around navbar-custom fixed top" id="navbarNav">
-            <ul class="navbar-nav navbar-custom">
-              <li>
-                <a href="index.html">
-                    <div class="home-icon">
-                        <i class="fa fa-house" aria-hidden="true"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../global-styles.css">
+        <link rel="stylesheet" href="../pages-styles/cardapio-style.css">
+        <title>CafeteriaJS</title>
+    </head>
+    <body>
+        <!-- NAVBAR ATT -->
+        <nav class="navbar navbar-expand-lg navbar-custom fixed top">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-around navbar-custom fixed top"
+                    id="navbarNav">
+                    <ul class="navbar-nav navbar-custom">
+                        <li>
+                            <a href="index.html">
+                                <div class="home-icon">
+                                    <i class="fa fa-house" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Agendamento de pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- LOGO -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm col-md-12 text-center">
+                        <img src="/assets/logos/logo_st.png" alt="Logo da CafeteriaJS" class="logo">
                     </div>
-                </a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Agendamento de pedido</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contato.html">Contato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                </div>
+            </div>
+        </article>
         <main>
-        <h1>Cafés</h1>
-        <div class="bebidas">
-            <div class="precos-bebidas">
-                <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+            <!-- CAFÉS -->
+            <div class="margin-h1">
+                <h1 class="h1-title">Cafés</h1>
             </div>
-            <div class="img-bebidas">
-                <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
+            <div class="bebidas">
+                <div class="col-8">
+                    <div class="container col-8 mt-2">
+                        <div class="card-spaces">
+                            <button type="button" class="button-card" onclick="expressoModal()">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Expresso</span>
+                                            <div class="price-cifrao">
+                                                <span>R$</span>
+                                                <span class="price-expresso">8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="card-spaces">
+                            <button type="button" class="button-card" onclick="capuccinoModal()">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Capuccino</span>
+                                            <div class="price-cifrao">
+                                                <span>R$</span>
+                                                <span class="price-capuccino">10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="card-spaces">
+                            <button class="button-card">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Frapuccino</span>
+                                            <div class="price-cifrao">
+                                                <span>R$</span>
+                                                <span class="price-frapuccino">15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="card-spaces">
+                            <button class="button-card">
+                                <div class="container-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span>Café com leite</span>
+                                            <div class="price-cifrao">
+                                                <span>R$</span>
+                                                <span class="price-cafe-com-leite">8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-4 mt-2" style="padding-left: 50px;">
+                    <div class="col-10 p-2"><img
+                        src="../assets/images/cardapio/modals/coffees/cafe_expresso.png"
+                        alt="cafe-expresso"
+                        class="cafe_img"></div>
+                </div>
             </div>
-        </div>
-        <h1>Lanches</h1>
-        <div class="lanches">
-            <div class="precos-lanches">
-                <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+            <!-- LANCHES -->
+            <div class="margin-h1">
+                <h1 class="h1-title">Lanches</h1>
             </div>
-            <div class="img-lanches">
-                <img src="../assets/images/misto-quente.jpg" alt="bauru">
+
+            <div class="lanches">
+                <div class="col-4">
+                    <div class="container mt-2" style="padding-left: 75px;">
+                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/misto-quente.jpg" alt="bauru" class="lanche_img"></div>
+                    </div>
+                </div>
+                <div class="container mt-2">
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Pão na Chapa</span>
+                                        <span>R$8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>À moda</span>
+                                        <span>R$10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Bauru</span>
+                                        <span>R$13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Churrasco</span>
+                                        <span>R$8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Sanduíche Natural</span>
+                                        <span>R$13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <h1>Pratos</h1>
-        <div class="pratos">
-            <div class="precos-pratos">
-                <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-                <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
-                <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
-                <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
-                <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+            <!-- PRATOS -->
+            <div class="margin-h1">
+                <h1 class="h1-title">Pratos</h1>
             </div>
-            <div class="img-pratos">
-                <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
+
+            <div class="pratos">
+                <div class="col-8">
+                    <div class="container col-8 mt-2" style="padding: 0;">
+                        <div class="cards-pratos">
+                            <div class="card-spaces">
+                                <button class="button-card">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Filet Mignon</span>
+                                                <span>R$30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="card-spaces">
+                                <button class="button-card">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Filé de Frango</span>
+                                                <span>R$25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="card-spaces">
+                                <button class="button-card">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Bife a Cavalo</span>
+                                                <span>R$34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="card-spaces">
+                                <button class="button-card">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Parmegiana de Frango</span>
+                                                <span>R$28</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="card-spaces">
+                                <button class="button-card">
+                                    <div class="container-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span>Parmegiana de Carne</span>
+                                                <span>R$32</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-4 mt-2" style="padding-left: 50px;">
+                    <div class="col-10 p-2" id="img-prato"><img
+                        src="../assets/images/bife a cavalo.jpg"
+                        alt="bife-a-cavalo"
+                        class="prato_img"></div>
+                </div>
             </div>
-        </div>
-        <h1>Cafés</h1>
-        <div class="bebidas">
-            <div class="precos-bebidas">
-                <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
+            <!-- DOCES -->
+            <div class="margin-h1">
+                <h1 class="h1-title">Doces</h1>
             </div>
-            <div class="img-bebidas">
-                <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
+
+            <div class="doces">
+                <div class="col-4">
+                    <div class="container mt-2" style="padding-left: 60px;">
+                        <div class="col-3 offset-4 p-2" id="img-lanche"><img src="../assets/images/tiramsu.jpg" alt="bauru" class="doce_img"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card-spaces mt-2">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Petit Gateau</span>
+                                        <span>R$28</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Brownie</span>
+                                        <span>R$25</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Taça Maravilha</span>
+                                        <span>R$23</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Banana Split</span>
+                                        <span>R$34</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="card-spaces mb-2">
+                        <button class="button-card">
+                            <div class="container-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Tiramisu</span>
+                                        <span>R$40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <h1>Lanches</h1>
-        <div class="lanches">
-            <div class="precos-lanches">
-                <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
+        </main>
+        <section>
+            <!-- Modal -->
+            <!-- EXPRESSO POP UP -->
+            <div class="modal fade" id="expressoModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img
+                                class="img-pop-up"
+                                src="/assets/images/cardapio/modals/coffees/cafe_expresso.png"
+                                alt="">
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body pop-up-main">
+                            <h1>Expresso</h1>
+                            <p>Um café expresso, frequentemente referido simplesmente como expresso, é um
+                                método de preparar café através da passagem de água quente, não fervente, sob
+                                alta pressão pelo café moído. Um café expresso, frequentemente referido
+                                simplesmente como expresso, é um método de preparar café através da passagem de
+                                água quente, não fervente, sob alta pressão pelo café moído.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- CONTADOR DINHEIRO -->
+                            <div class="counter-money-container">
+                                <span class="counter-cifrao">R$</span>
+                                <span class="counter-money" id="counter-expresso">0</span>
+                            </div>
+                            <!-- CONTADOR -->
+                            <div class="container-card-contador">
+                                <div class="card contador-card">
+                                    <div class="card-body body-counter">
+                                        <button type="button" class="minus-btn">-</button>
+                                        <span class="counter-text">0</span>
+                                        <button type="button" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button type="button" class="button-card-add">
+                                <div class="container-card add-card-container">
+                                    <div class="card add-card">
+                                        <div class="card-body add-card-body">
+                                            <span>Adicionar ao carrinho</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="img-lanches">
-                <img src="../assets/images/misto-quente.jpg" alt="bauru">
+            <!-- / EXPRESSO POP UP -->
+
+            <!-- CAPUCCINO POP UP -->
+            <div class="modal fade" id="capuccinoModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img
+                                class="img-pop-up"
+                                src="/assets/images/cardapio/modals/coffees/capuccino.png"
+                                alt="">
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body pop-up-main">
+                            <h1>Capuccino</h1>
+                            <p>Um café capuccino, frequentemente referido simplesmente como capuccino, é um
+                                método de preparar café através da passagem de água quente, não fervente, sob
+                                alta pressão pelo café moído. Um café capuccino, frequentemente referido
+                                simplesmente como capuccino, é um método de preparar café através da passagem de
+                                água quente, não fervente, sob alta pressão pelo café moído.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- CONTADOR DINHEIRO -->
+                            <div class="counter-money-container">
+                                <span class="counter-cifrao">R$</span>
+                                <span class="counter-money" id="counter-capuccino">0</span>
+                            </div>
+                            <!-- CONTADOR -->
+                            <div class="container-card-contador">
+                                <div class="card contador-card">
+                                    <div class="card-body body-counter">
+                                        <button type="button" class="minus-btn">-</button>
+                                        <span class="counter-text">0</span>
+                                        <button type="button" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button type="button" class="button-card-add">
+                                <div class="container-card add-card-container">
+                                    <div class="card add-card">
+                                        <div class="card-body add-card-body">
+                                            <span>Adicionar ao carrinho</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <h1>Pratos</h1>
-        <div class="pratos">
-            <div class="precos-pratos">
-                <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-                <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
-                <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
-                <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
-                <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
+
+            <!-- PÃO NA CHAPA POP UP -->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img class="img-pop-up" src="/assets/images/cardapio/modals/coffees/cafe_expresso.png" alt="">
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body pop-up-main">
+                            <h1>Expresso</h1>
+                            <p>Um café expresso, frequentemente referido simplesmente como expresso, é um
+                                método de preparar café através da passagem de água quente, não fervente, sob
+                                alta pressão pelo café moído.Um café expresso, frequentemente referido
+                                simplesmente como expresso, é um método de preparar café através da passagem de
+                                água quente, não fervente, sob alta pressão pelo café moído.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- CONTADOR -->
+                            <div class="container-card-contador">
+                                <div class="card contador-card">
+                                    <div class="card-body body-counter">
+                                        <button type="button" class="minus-btn">-</button>
+                                        <span class="counter-text">0</span>
+                                        <button type="button" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button type="button" class="button-card-add">
+                                <div class="container-card add-card-container">
+                                    <div class="card add-card">
+                                        <div class="card-body add-card-body">
+                                            <span>Adicionar ao carrinho</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="img-pratos">
-                <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
-            </div>
-        </div>
-        <h1>Cafés</h1>
-        <div class="bebidas">
-            <div class="precos-bebidas">
-                <p>Expresso _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Cappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Frappucino _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Café com leite _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-            </div>
-            <div class="img-bebidas">
-                <img src="../assets/images/café-expresso.png" alt="cafe-expresso">
-            </div>
-        </div>
-        <h1>Lanches</h1>
-        <div class="lanches">
-            <div class="precos-lanches">
-                <p>Pão na chapa _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>À moda _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$10,00</p>
-                <p>Bauru _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-                <p>Churrasco _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$8,00</p>
-                <p>Sanduíche natural _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$13,00</p>
-            </div>
-            <div class="img-lanches">
-                <img src="../assets/images/misto-quente.jpg" alt="bauru">
-            </div>
-        </div>
-        <h1>Pratos</h1>
-        <div class="pratos">
-            <div class="precos-pratos">
-                <p>Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-                <p>Filé de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$25,00</p>
-                <p>Bife à cavalo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$34,00</p>
-                <p>Parmegiana de Frango _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$23,00</p>
-                <p>Parmegiana de Filet Mignon _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ R$30,00</p>
-            </div>
-            <div class="img-pratos">
-                <img src="../assets/images/bife a cavalo.jpg" alt="bife-a-cavalo">
-            </div>
-        </div>
-    </main>
-</body>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
+        <script src="/scripts/cardapio.js"></script>
+    </body>
 
 </html>
