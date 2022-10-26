@@ -39,4 +39,33 @@ function cleanProductsCart(){
   listaProdutos.innerHTML = ""
 }
 
+function addToCartExpresso() {
+  const expresso_object = {
+      name: 'Expresso',
+      price: 8.00,
+      src: '/assets/images/cardapio/modals/coffees/cafe_expresso.png'
+  }
+  localStorage.setItem('expresso', JSON.stringify(expresso_object));
+  
+}
+
+function addToCartCapuccino() {
+  const capuccino = {
+      name: 'Capuccino',
+      price: 10.00,
+      src: '/assets/images/cardapio/modals/coffees/capuccino.png'
+  }
+  localStorage.setItem('capuccino', JSON.stringify(capuccino));
+}
+
+function addToCart(productName, price, imageSrc){
+  const product = {
+      name: productName,
+      price: price,
+      src: imageSrc
+  }
+  localStorage.setItem(productName, JSON.stringify(product));
+}
+
+
 showProductsOnCart()
