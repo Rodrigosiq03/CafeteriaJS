@@ -187,3 +187,49 @@ li {
 .modal-footer {
     border-top: 1px solid var(--amarelo);
 }
+
+.container-div-card-cart {
+    margin-top: 10px;
+    width: 815px;
+    height: 90px;
+    background-color: var(--cinza);
+    border-radius: 10px;
+    padding: 0;
+}
+.card-cart-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+.start-card {
+    display: flex;
+    justify-content: flex-start;
+}
+.img-card-cart {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+.start-card h3 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--branco);
+}
+.end-card {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--branco);
+}
