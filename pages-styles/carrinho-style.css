@@ -190,7 +190,7 @@ li {
 
 .container-div-card-cart {
     margin-top: 10px;
-    width: 815px;
+    width: 810px;
     height: 90px;
     background-color: var(--cinza);
     border-radius: 10px;
@@ -232,4 +232,8 @@ li {
     font-size: 24px;
     font-weight: bold;
     color: var(--branco);
+}
+#lista-produtos-carrinho {
+    padding-left: 0px;
+    padding-right: 4px;
 }
