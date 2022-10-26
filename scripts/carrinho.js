@@ -19,6 +19,7 @@ function getAllItensFromLocalStorage() {
 
 function showProductsOnCart() {
   let allItens = getAllItensFromLocalStorage();
+  listaProdutos.innerHTML = ""
 
   allItens.forEach((item) => {
     let li = document.createElement("li");
@@ -46,6 +47,7 @@ function addToCartExpresso() {
       src: '/assets/images/cardapio/modals/coffees/cafe_expresso.png'
   }
   localStorage.setItem('expresso', JSON.stringify(expresso_object));
+  showProductsOnCart()
   
 }
 
@@ -56,6 +58,7 @@ function addToCartCapuccino() {
       src: '/assets/images/cardapio/modals/coffees/capuccino.png'
   }
   localStorage.setItem('capuccino', JSON.stringify(capuccino));
+  showProductsOnCart()
 }
 
 function addToCart(productName, price, imageSrc){
@@ -65,6 +68,7 @@ function addToCart(productName, price, imageSrc){
       src: imageSrc
   }
   localStorage.setItem(productName, JSON.stringify(product));
+  showProductsOnCart()
 }
 
 
