@@ -48,6 +48,16 @@ function addToCartCapuccino() {
     }
     localStorage.setItem('capuccino', JSON.stringify(capuccino));
 }
+
+function addToCart(productName, price, imageSrc){
+    const product = {
+        name: productName,
+        price: price,
+        src: imageSrc
+    }
+    localStorage.setItem(productName, JSON.stringify(product));
+}
+
 function frapuccinoModal() {
     let pop_up_frapuccino = new bootstrap.Modal(frapuccino);
     pop_up_frapuccino.show();
