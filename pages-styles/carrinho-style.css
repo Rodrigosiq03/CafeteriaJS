@@ -45,9 +45,14 @@
     border-radius: 20px;
 }
 
-.card-body {
+.add-itens-body {
     display: flex;
     justify-content: flex-start;
+    margin : 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 10px;
 }
 .icon-add {
     width: 50px;
@@ -90,4 +95,95 @@
 
 .footer-buttons {
     padding-bottom: 100px;
+}
+
+/* MODAL CART */
+
+.pop-up-itens-modal {
+    width: 500px;
+    height: 80%;
+    background-color: var(--fundo);
+}
+.modal-header {
+    border-bottom: 1px solid var(--amarelo);
+}
+.modal-title {
+    color: var(--branco);
+}
+li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container-item-card-list {
+    align-items: center;
+    margin-right: 35px;
+}
+.button-card-item {
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: var(--cinza);
+    border: 2px solid var(--cinza);
+    padding: 0;
+}
+.card-item-list {
+    width: 400px;
+    height: 80px;
+    background-color: var(--cinza);
+    border-radius: 10px;
+    color: var(--branco);
+    border: none;
+    padding: 0;
+}
+.item-body {
+    display: flex;
+    justify-content: space-between;
+    margin : 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+.img-and-title-item {
+    display: flex;
+    justify-content: row;
+}
+.img-item-list {
+    object-fit: cover;
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+.title-item {
+    padding-top: 20px;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco);
+}
+.title-item-fix {
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco);
+}
+.item-desc {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.price-item {
+    display: flex;
+    flex-direction: flex-end;
+    padding-right: 10px;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--amarelo);
 }

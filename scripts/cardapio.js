@@ -116,6 +116,3 @@ function tiramisuModal() {
     let pop_up_tiramisu = new bootstrap.Modal(tiramisu);
     pop_up_tiramisu.show();
 }
-
-
-
