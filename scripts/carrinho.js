@@ -34,4 +34,9 @@ function showProductsOnCart() {
   });
 }
 
+function cleanProductsCart(){
+  localStorage.clear()
+  listaProdutos.innerHTML = ""
+}
+
 showProductsOnCart()
