@@ -411,7 +411,15 @@
                             aria-label="Close"></button> -->
                         </div>
                         <div class="modal-body pop-up-main">
-                            <h1>Expresso</h1>
+                            <div class="container-title-and-prices">
+                                <div class="title-prices">
+                                    <h1>Expresso</h1>
+                                </div>
+                                <div class="prices-pop-ups">
+                                    <h1>R$</h1>
+                                    <h1 id="price-expresso">8</h1>
+                                </div>
+                            </div>
                             <p>Um café expresso, frequentemente referido simplesmente como expresso, é um
                                 método de preparar café através da passagem de água quente, não fervente, sob
                                 alta pressão pelo café moído. Um café expresso, frequentemente referido
@@ -420,7 +428,7 @@
                         </div>
                         <div class="modal-footer">
                             <!-- ADD TO CART BUTTON -->
-                            <button type="button" class="button-card-add">
+                            <button type="submit" class="button-card-add" onclick="window.location.href = 'http://127.0.0.1:5501/pages/carrinho.html'">
                                 <div class="container-card add-card-container">
                                     <div class="card add-card">
                                         <div class="card-body add-card-body">
@@ -457,7 +465,7 @@
                         </div>
                         <div class="modal-footer">
                             <!-- ADD TO CART BUTTON -->
-                            <button type="button" class="button-card-add">
+                            <button type="submit" class="button-card-add" onclick="addToCartCapuccino()">
                                 <div class="container-card add-card-container">
                                     <div class="card add-card">
                                         <div class="card-body add-card-body">
@@ -1057,8 +1065,6 @@
             </div>
             <!-- TIRAMISU POP UP -->
 
-
-            
         </section>
 
         <script

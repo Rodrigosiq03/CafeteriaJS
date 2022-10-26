@@ -163,8 +163,21 @@ div p {
 
 /* MAIN STYLES */
 .pop-up-main {
-    color: var(--card);
-    
+    color: var(--card); 
+}
+.container-title-and-prices {
+    display: flex;
+    justify-content: flex-start
+}
+.title-prices {
+    display: flex;
+    justify-content: flex-start;
+}
+.prices-pop-ups {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    padding-left: 30px;
 }
 .pop-up-main p {
     padding-left: 0;
@@ -177,7 +190,6 @@ div p {
 }
 
 /* ADD TO CART STYLES */
-
 
 .add-card-container {
     width: 190px;
