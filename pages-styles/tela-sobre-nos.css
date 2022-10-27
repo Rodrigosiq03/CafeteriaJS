@@ -7,16 +7,25 @@ main {
 }
 
 #texto{
-  text-align: justify;
-  color: white;
-  border-right: 2px solid #F0DB4F;
-  padding-right:110px ;
-  padding-left: 42px;
+position: absolute;
+width: 754px;
+height: 752px;
+left: 59px;
+top: 194px;
+padding-right:110px ;
+padding-left: 35px;
+font-weight: 700;
+font-size: 31px;
+line-height: 29px;
+text-align: justify;
+border-right: 2px solid #F0DB4F;
 }
 
-.rounded-logo{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  top: 250%;
+img{
+position: absolute;
+width: 650px;
+height: 650px;
+left: 948px;
+top: 50px;
+padding-top: 200px;
 }
