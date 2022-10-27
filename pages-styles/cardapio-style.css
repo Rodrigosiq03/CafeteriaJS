@@ -57,12 +57,13 @@
     top: 90%;
     animation-name: alert-animation;
     visibility: hidden;
-    animation-duration: 4s;
+    animation-duration: 4.5s;
 }
 
 @keyframes alert-animation {
     0%{top: 100%; visibility:visible;}
     50%{top: 90%;}
+    70%{top: 90%;}
     100%{top:100%; visibility: hidden;}
 }
 
