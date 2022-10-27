@@ -22,7 +22,9 @@ const taca_maravilha = document.getElementById('taca_maravilhaModal');
 const banana_split = document.getElementById('banana_splitModal');
 const tiramisu = document.getElementById('tiramisuModal');
 
-// FUNCTIONS OF MODALS WITH COFFEES
+const alert_pop_up = document.getElementsByClassName('alert-success');
+
+// ALERT POP UP - ADICIONADO AO CARRINHO FUNCTIONS OF MODALS WITH COFFEES
 
 function expressoModal() {
     let pop_up_expresso = new bootstrap.Modal(expresso);
@@ -33,19 +35,19 @@ function capuccinoModal() {
     pop_up_capuccino.show();
 }
 
-
-function addToCart(productName, price, imageSrc){
+function addToCart(productName, price, imageSrc) {
     const product = {
         name: productName,
         price: price,
         src: imageSrc
     }
     localStorage.setItem(productName, JSON.stringify(product));
-    
-    let pop_up_expresso = new bootstrap.Modal(expresso);
-    pop_up_expresso.hide();
 
+    alert_pop_up.alert();
+
+    
 }
+
 
 function frapuccinoModal() {
     let pop_up_frapuccino = new bootstrap.Modal(frapuccino);
