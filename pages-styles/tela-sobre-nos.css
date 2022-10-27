@@ -6,4 +6,17 @@ main {
   color: white;
 }
 
+#texto{
+  text-align: justify;
+  color: white;
+  border-right: 2px solid #F0DB4F;
+  padding-right:110px ;
+  padding-left: 42px;
+}
 
+.rounded-logo{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 250%;
+}
