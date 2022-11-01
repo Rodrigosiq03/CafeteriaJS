@@ -496,6 +496,19 @@ footer {
 }
 
 /* CREDIT CARD SELECTED STYLES */
+.card-number-container-pop-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+.card-number-input {
+    border: 2px solid var(--amarelo);
+    border-radius: 5px;
+}
+.card-number-input::placeholder {
+    padding-left: 5px;
+}
 
 /* PIX SELECTED STYLES */
 .logo {
