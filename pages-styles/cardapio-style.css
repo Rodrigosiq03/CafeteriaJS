@@ -55,6 +55,10 @@
 .alert{
     position: fixed;
     top: 90%;
+    visibility: hidden;
+}
+
+.alert-animation{
     animation-name: alert-animation;
     visibility: hidden;
     animation-duration: 4.5s;

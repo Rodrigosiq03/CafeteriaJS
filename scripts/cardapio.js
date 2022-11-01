@@ -22,7 +22,7 @@ const taca_maravilha = document.getElementById('taca_maravilhaModal');
 const banana_split = document.getElementById('banana_splitModal');
 const tiramisu = document.getElementById('tiramisuModal');
 
-const alert_pop_up = document.getElementsByClassName('alert-success');
+const alert_pop_up = document.getElementById('k');
 
 // ALERT POP UP - ADICIONADO AO CARRINHO FUNCTIONS OF MODALS WITH COFFEES
 
@@ -43,8 +43,10 @@ function addToCart(productName, price, imageSrc) {
     }
     localStorage.setItem(productName, JSON.stringify(product));
 
-    alert_pop_up.alert();
-
+    
+    alert_pop_up.classList.remove("alert-animation")
+    alert_pop_up.offsetWidth
+    alert_pop_up.classList.add("alert-animation")
     
 }
 
