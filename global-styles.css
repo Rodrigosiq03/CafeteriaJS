@@ -61,11 +61,15 @@ div img {
     height: 30px;
   }
 .navbar-custom {
-    background-color: #F0DB4F;
+    background-color: var(--amarelo);
 } 
 li {
     padding-left: 5px;
 }
 li a:hover {
     color: #0e0d0d !important;
+}
+.rounded-logo {
+  width: 100px;
+  height: 200px;
 }

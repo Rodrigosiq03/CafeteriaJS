@@ -51,3 +51,7 @@ function addToCart(productName, price, imageSrc){
 }
 
 showProductsOnCart()
+
+function goToPagamentoPage() {
+  window.location.href = "pagamento.html";
+}
