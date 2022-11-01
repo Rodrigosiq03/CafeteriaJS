@@ -72,18 +72,32 @@
     </div>
 
     <template id="card-produto-template">
-        <div class="container-div-card-cart">
-            <div class="container-card container-card-cart">
-                <div class="card card-cart">
-                    <div class="card-body card-cart-body">
-                        <div class="start-card">
-                            <img class="img-card-cart img-produto" src="" alt="">
-                            <h3 class="nome-produto"></h3>
+        <div id="k">
+            <div class="container-div-card-cart">
+                <div class="container-card container-card-cart">
+                    <div class="card card-cart">
+                        <div class="card-body card-cart-body">
+                            <div class="start-card">
+                                <img class="img-card-cart img-produto" src="" alt="">
+                                <h3 class="nome-produto"></h3>
+                            </div>
+                            <div class="end-card">
+                                <span>R$</span>
+                                <span class="preco-produto"></span>
+                            </div>
                         </div>
-                        <div class="end-card">
-                            <span>R$</span>
-                            <span class="preco-produto"></span>
-                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="change-quantity-btn container">
+                <div class="row">
+                    <div class="col">
+                        <button onclick="AddQuantityItens(this, 1)">Add</button>
+                    </div>
+                    <div class="col" id="quantidade-itens">1
+                    </div>
+                    <div class="col">
+                        <button onclick="AddQuantityItens(this, -1)">Sub</button>
                     </div>
                 </div>
             </div>
@@ -98,7 +112,7 @@
 
         <button type="button" class="button-card" onclick="itensPopUp()">
 
-            <div class="container-card">
+            <div class="container-card add-btn">
                 <div class="card">
                     <div class="card-body add-itens-body">
                         <div class="icon-add">
