@@ -1,0 +1,49 @@
+:root {
+    --amarelo: #F0DB4F;
+    --fundo: #2B2B2B;
+    --cinza: #616161;
+    --branco: #FFFFFF;
+    --card: #202020;
+    --amarelo-opaco: #f0da4fb3;
+}
+
+.rounded-logo {
+    width: 250px;
+    height: 250px;
+}
+
+/* CONFIRMATTION CARD STYLES */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-confirmation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+    width: 550px;
+    height: 70px;
+    margin-right: 0;
+    border-radius: 10px;
+}
+.container-confirmation i {
+    color: var(--amarelo);
+    font-size: 50px;
+    margin-right: 30px;
+    border-radius: 50px;
+    background-color: var(--card);
+}
+.date-time-ordered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row ;
+}
+.date-ordered {
+    padding-right: 15px;
+}

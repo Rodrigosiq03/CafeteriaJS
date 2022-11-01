@@ -77,7 +77,7 @@ function selectData(element) {
         date_3.classList.remove("card-date-button-selected");
         date_4.classList.remove("card-date-button-selected");
         var weekday = document.getElementById("weekday");
-        weekday.innerHTML = "Terça-feira";
+        weekday.innerHTML = "Terça-feira,";
         var day = document.getElementById("day-for-data");
         day.innerHTML = "4";
         var month = document.getElementById("month-for-data");
@@ -88,7 +88,7 @@ function selectData(element) {
         date_3.classList.remove("card-date-button-selected");
         date_4.classList.remove("card-date-button-selected");
         var weekday = document.getElementById("weekday");
-        weekday.innerHTML = "Quarta-feira";
+        weekday.innerHTML = "Quarta-feira,";
         var day = document.getElementById("day-for-data");
         day.innerHTML = "5";
         var month = document.getElementById("month-for-data");
@@ -99,7 +99,7 @@ function selectData(element) {
         date_3.classList.add("card-date-button-selected");
         date_4.classList.remove("card-date-button-selected");
         var weekday = document.getElementById("weekday");
-        weekday.innerHTML = "Quinta-feira";
+        weekday.innerHTML = "Quinta-feira,";
         var day = document.getElementById("day-for-data");
         day.innerHTML = "6";
         var month = document.getElementById("month-for-data");
@@ -110,7 +110,7 @@ function selectData(element) {
         date_3.classList.remove("card-date-button-selected");
         date_4.classList.add("card-date-button-selected");
         var weekday = document.getElementById("weekday");
-        weekday.innerHTML = "Sexta-feira";
+        weekday.innerHTML = "Sexta-feira,";
         var day = document.getElementById("day-for-data");
         day.innerHTML = "7";
         var month = document.getElementById("month-for-data");
@@ -119,18 +119,20 @@ function selectData(element) {
     
 }
 
-function selectTime(element) {
-    var time_1 = document.getElementById("time-1");
-    var time_2 = document.getElementById("time-2");
-    var time_3 = document.getElementById("time-3");
-    var time_4 = document.getElementById("time-4");
-    var time_5 = document.getElementById("time-5");
-    var time_6 = document.getElementById("time-6");
-    var time_7 = document.getElementById("time-7");
-    var time_8 = document.getElementById("time-8");
-    var time_9 = document.getElementById("time-9");
-    var time_10 = document.getElementById("time-10");
 
+var time_1 = document.getElementById("time-1");
+var time_2 = document.getElementById("time-2");
+var time_3 = document.getElementById("time-3");
+var time_4 = document.getElementById("time-4");
+var time_5 = document.getElementById("time-5");
+var time_6 = document.getElementById("time-6");
+var time_7 = document.getElementById("time-7");
+var time_8 = document.getElementById("time-8");
+var time_9 = document.getElementById("time-9");
+var time_10 = document.getElementById("time-10");
+
+function selectTime(element) {
+    
     if (element.id == "time-1") {
         time_1.classList.add("radio-button-selected");
         time_2.classList.remove("radio-button-selected");
@@ -242,8 +244,28 @@ function selectTime(element) {
         time_9.classList.remove("radio-button-selected");
         time_10.classList.add("radio-button-selected");
     }
-    
+    if (element.classList.contains("radio-button-selected")) {
+        var  time = {
+            "time": element.innerHTML
+        }
+        localStorage.setItem("time", JSON.stringify(time));
+    }
+}
 
+
+var weekday = document.getElementById("weekday");
+var day = document.getElementById("day-for-data");
+var complement = document.getElementById("just-complement")
+var month = document.getElementById("month-for-data");
+
+function goToOrderDone() {
+    selectTime();
+    var informacoes = {
+        unidade: adress[0].innerHTML,
+        data: weekday.innerHTML + day.innerHTML + complement.innerHTML + month.innerHTML,
+    }
+    localStorage.setItem("informacoes", JSON.stringify(informacoes));
+    window.location.href = "confirmacao_pedido.html";
 }
 
 
