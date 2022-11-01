@@ -23,6 +23,7 @@ function showProductsOnCart() {
 
   allItens.forEach((item) => {
     let li = document.createElement("li");
+    li.className = "item-list"
     listaProdutos.appendChild(li);
 
     let templateCopy = produtosCardTemplate.content.cloneNode(true);

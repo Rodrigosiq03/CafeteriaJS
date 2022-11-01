@@ -15,7 +15,7 @@
 .cart-icon {
     position: absolute;
     left: 49%;
-    bottom: 70%;
+    bottom:68%;
     color: var(--amarelo);
     font-size: 20px;
 }
@@ -240,16 +240,43 @@ li {
 
 .change-quantity-btn{
     position: relative;
-    left: 70%;
+    left: 58%;
     bottom: 60px;
-    max-width: 200px;
+    max-width: 90px;
+    border: #f0da4f 2px solid;
+    border-radius: 10px;
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: #F0DB4F;
 }
 
-#card-produto-template  p{
-    background-color: green;
+.quantidade-itens{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 5px;
+    left: 20%;
 }
 
 .add-btn{
     width: 800px;
+}
+
+#itens-da-lista{
+    position: relative;
+    left: 28.5%;
+}
+
+.item-list{
+    margin: 0;
+    padding: 0;
+    height: 100px;
 }
 /* ALERT */

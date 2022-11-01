@@ -72,7 +72,7 @@
     </div>
 
     <template id="card-produto-template">
-        <div id="k">
+        
             <div class="container-div-card-cart">
                 <div class="container-card container-card-cart">
                     <div class="card card-cart">
@@ -90,21 +90,20 @@
                 </div>
             </div>
             <div class="change-quantity-btn container">
-                <div class="row">
-                    <div class="col">
-                        <button onclick="AddQuantityItens(this, 1)">Add</button>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-1">
+                        <button onclick="AddQuantityItens(this, 1)">+</button>
                     </div>
-                    <div class="col" id="quantidade-itens">1
-                    </div>
+                    <div class="col quantidade-itens" id="quantidade-itens">1</div>
                     <div class="col">
-                        <button onclick="AddQuantityItens(this, -1)">Sub</button>
+                        <button onclick="AddQuantityItens(this, -1)">-</button>
                     </div>
                 </div>
             </div>
-        </div>
+        
     </template>
 
-    <div class="d-flex justify-content-center">
+    <div id="itens-da-lista" class="d-flex justify-content-start">
         <ul id="lista-produtos-carrinho"></ul>
     </div>
 
