@@ -447,9 +447,9 @@
                             </div>
                             <!-- CARTAO DE CRÉDITO -->
                             <div class="visually-hidden credit-card-selected">
-                                <div class="card-number-container-pop-up">
+                                <div class="card-number-container-pop-up number-card-label">
                                     <h5>Número do Cartão</h5>
-                                    <input type="text" class="card-number-input" placeholder="0000 0000 0000 0000">
+                                    <input type="text" pattern="^[a-zA-Z0-9\.]*$" step="0000.0000.0000.0000" id="inputNumber" class="card-number-input" placeholder="0000 0000 0000 0000">
                                 </div>
                                 <div class="expiration-date">
                                     <!-- MONTH SELECTIONS -->
@@ -479,9 +479,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="card-number-container-pop-up">
+                                <div class="card-number-container-pop-up name-card">
                                     <h5>Nome do Titular</h5>
-                                    <input type="text" class="card-number-input" placeholder="Nome do Titular">
+                                    <input type="text" id="inputName" class="card-number-input" placeholder="Nome do Titular">
                                 </div>
                             </div>
                             <!-- PIX -->

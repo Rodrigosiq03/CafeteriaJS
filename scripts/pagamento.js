@@ -40,6 +40,47 @@ function paymentModal() {
     pop_up_payment.show();
 }
 
+// var inputNumber = document.getElementById("inputNumber");
+// inputNumber.addEventListener("keyup", function() {
+//     var value = inputNumber.value;
+//     console.log(value);
+//     if (value.length == 4) {
+//         inputNumber.value = value + " ";
+//     }
+//     if (value.length == 8) {
+//         inputNumber.value = value + " ";
+//     }
+//     if (value.length == 12) {
+//         inputNumber.value = value + " ";
+//     }
+// });
+
+
+var inputName = document.getElementById("inputName");
+inputName.addEventListener("keypress", function(event) {
+    if (event.key === "1") {
+        event.preventDefault();
+    } else if (event.key === "2") {
+        event.preventDefault();
+    } else if (event.key === "3") {
+        event.preventDefault();
+    } else if (event.key === "4") {
+        event.preventDefault();
+    } else if (event.key === "5") {
+        event.preventDefault();
+    } else if (event.key === "6") {
+        event.preventDefault();
+    } else if (event.key === "7") {
+        event.preventDefault();
+    } else if (event.key === "8") {
+        event.preventDefault();
+    } else if (event.key === "9") {
+        event.preventDefault();
+    } else if (event.key === "0") {
+        event.preventDefault();
+    } 
+});
+
 var name_payment = document.getElementsByClassName("name-payment-selection");
 var credit_card_selected = document.getElementsByClassName("credit-card-selected");
 var pix_selected = document.getElementsByClassName("pix-selected");

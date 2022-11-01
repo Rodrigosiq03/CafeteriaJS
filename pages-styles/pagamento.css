@@ -496,7 +496,14 @@ footer {
 }
 
 /* CREDIT CARD SELECTED STYLES */
+.credit-card-selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card-number-container-pop-up {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -509,7 +516,65 @@ footer {
 .card-number-input::placeholder {
     padding-left: 5px;
 }
+.card-number-input:focus {
+    border: 2px solid var(--amarelo);
+    border-radius: 5px;
+    outline: none !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.expiration-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.dropdown-choose-month {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-choose-month button {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+.dropdown-choose-month button:hover {
+    background-color: var(--amarelo);
+    color: var(--fundo);
+}
+.dropdown-choose-month button:focus {
+    background-color: var(--amarelo);
+    color: var(--fundo);
+}
+.dropdown-choose-year button {
+    background-color: var(--cinza);
+}
+.dropdown-choose-year button:hover {
+    background-color: var(--amarelo);
+    color: var(--fundo);
+}
+.dropdown-choose-year button:focus {
+    background-color: var(--amarelo);
+    color: var(--fundo);
+}
+
+.number-card-label {
+    padding-top: 10px;
+}
+.name-card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /* PIX SELECTED STYLES */
 .logo {
     display: flex;
