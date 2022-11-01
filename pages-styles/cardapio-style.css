@@ -51,6 +51,22 @@
     flex-direction: column;
     padding-right: 50px;
 }
+
+.alert{
+    position: fixed;
+    top: 90%;
+    animation-name: alert-animation;
+    visibility: hidden;
+    animation-duration: 4.5s;
+}
+
+@keyframes alert-animation {
+    0%{top: 100%; visibility:visible;}
+    50%{top: 90%;}
+    70%{top: 90%;}
+    100%{top:100%; visibility: hidden;}
+}
+
 .pratos {
     display: flex;
     justify-content: center;
@@ -163,8 +179,21 @@ div p {
 
 /* MAIN STYLES */
 .pop-up-main {
-    color: var(--card);
-    
+    color: var(--card); 
+}
+.container-title-and-prices {
+    display: flex;
+    justify-content: flex-start
+}
+.title-prices {
+    display: flex;
+    justify-content: flex-start;
+}
+.prices-pop-ups {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    padding-left: 30px;
 }
 .pop-up-main p {
     padding-left: 0;
@@ -177,7 +206,6 @@ div p {
 }
 
 /* ADD TO CART STYLES */
-
 
 .add-card-container {
     width: 190px;
