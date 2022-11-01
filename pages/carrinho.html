@@ -72,25 +72,38 @@
     </div>
 
     <template id="card-produto-template">
-        <div class="container-div-card-cart">
-            <div class="container-card container-card-cart">
-                <div class="card card-cart">
-                    <div class="card-body card-cart-body">
-                        <div class="start-card">
-                            <img class="img-card-cart img-produto" src="" alt="">
-                            <h3 class="nome-produto"></h3>
-                        </div>
-                        <div class="end-card">
-                            <span>R$</span>
-                            <span class="preco-produto"></span>
+        
+            <div class="container-div-card-cart">
+                <div class="container-card container-card-cart">
+                    <div class="card card-cart">
+                        <div class="card-body card-cart-body">
+                            <div class="start-card">
+                                <img class="img-card-cart img-produto" src="" alt="">
+                                <h3 class="nome-produto"></h3>
+                            </div>
+                            <div class="end-card">
+                                <span>R$</span>
+                                <span class="preco-produto"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="change-quantity-btn container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-1">
+                        <button onclick="AddQuantityItens(this, 1)">+</button>
+                    </div>
+                    <div class="col quantidade-itens" id="quantidade-itens">1</div>
+                    <div class="col">
+                        <button onclick="AddQuantityItens(this, -1)">-</button>
+                    </div>
+                </div>
+            </div>
+        
     </template>
 
-    <div class="d-flex justify-content-center">
+    <div id="itens-da-lista" class="d-flex justify-content-start">
         <ul id="lista-produtos-carrinho"></ul>
     </div>
 
@@ -98,7 +111,7 @@
 
         <button type="button" class="button-card" onclick="itensPopUp()">
 
-            <div class="container-card">
+            <div class="container-card add-btn">
                 <div class="card">
                     <div class="card-body add-itens-body">
                         <div class="icon-add">
@@ -132,7 +145,8 @@
         <div class="d-flex justify-content-center">
             <div class="row">
                 <div class="col-auto">
-                    <button type="button" class="btn btn-esvaziar" onclick="cleanProductsCart()">Esvaziar Carrinho</button>
+                    <button type="button" class="btn btn-esvaziar" onclick="cleanProductsCart()">Esvaziar
+                        Carrinho</button>
                 </div>
                 <div class="col-auto">
                     <button type="button" class="btn btn-continuar" onclick="goToPagamentoPage()">Continuar</button>
@@ -156,7 +170,8 @@
                             <!-- COFFEES ITENS -->
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Expresso', 8, '/assets/images/cardapio/modals/coffees/cafe_expresso.png')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Expresso', 8, '/assets/images/cardapio/modals/coffees/cafe_expresso.png')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -180,7 +195,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Cappuccino', 10, '/assets/images/cardapio/modals/coffees/capuccino.png')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Cappuccino', 10, '/assets/images/cardapio/modals/coffees/capuccino.png')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -204,7 +220,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Frappuccino', 15, '/assets/images/cardapio/modals/coffees/frapuccino.jpeg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Frappuccino', 15, '/assets/images/cardapio/modals/coffees/frapuccino.jpeg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -228,7 +245,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Café com leite', 8, '/assets/images/cardapio/modals/coffees/cafe_com_leite.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Café com leite', 8, '/assets/images/cardapio/modals/coffees/cafe_com_leite.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -253,7 +271,8 @@
                             <!-- LANCHES ITENS -->
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Pão na chapa', 8, '/assets/images/cardapio/modals/snacks/pao_na_chapa.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Pão na chapa', 8, '/assets/images/cardapio/modals/snacks/pao_na_chapa.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -277,7 +296,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('À moda', 10, '/assets/images/cardapio/modals/snacks/a_moda.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('À moda', 10, '/assets/images/cardapio/modals/snacks/a_moda.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -301,7 +321,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Bauru', 13, '/assets/images/cardapio/modals/snacks/bauru.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Bauru', 13, '/assets/images/cardapio/modals/snacks/bauru.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -325,7 +346,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Churrasco', 8, '/assets/images/cardapio/modals/snacks/churrasco.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Churrasco', 8, '/assets/images/cardapio/modals/snacks/churrasco.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -349,7 +371,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Sanduíche Natural', 13, '/assets/images/cardapio/modals/snacks/sanduiche_natural.png')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Sanduíche Natural', 13, '/assets/images/cardapio/modals/snacks/sanduiche_natural.png')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -374,7 +397,8 @@
                             <!-- PRATOS ITENS -->
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Filet Mignon', 30, '/assets/images/cardapio/modals/meals/filet_mignon.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Filet Mignon', 30, '/assets/images/cardapio/modals/meals/filet_mignon.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -398,7 +422,8 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Filé de frango', 25, '/assets/images/cardapio/modals/meals/file_de_frango.jpg')">
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Filé de frango', 25, '/assets/images/cardapio/modals/meals/file_de_frango.jpg')">
                                         <div class="card-item-list">
                                             <div class="card">
                                                 <div class="card-body item-body">
@@ -422,204 +447,208 @@
                             </li>
                             <li>
                                 <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Bife a Cavalo', 34, '/assets/images/cardapio/modals/meals/bife_a_cavalo.jpg')"">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/meals/bife_a_cavalo.jpg"
-                                                            alt="">
-                                                        <div class="title-item"><span>Bife a Cavalo</span></div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>34,00</span>
-                                                        </div>
+                                    <button type="button" class="button-card-item"
+                                        onclick="addToCart('Bife a Cavalo', 34, '/assets/images/cardapio/modals/meals/bife_a_cavalo.jpg')"">
+                                        <div class=" card-item-list">
+                                        <div class="card">
+                                            <div class="card-body item-body">
+                                                <div class="img-and-title-item">
+                                                    <img class="img-item-list"
+                                                        src="/assets/images/cardapio/modals/meals/bife_a_cavalo.jpg"
+                                                        alt="">
+                                                    <div class="title-item"><span>Bife a Cavalo</span></div>
+                                                </div>
+                                                <div class="item-desc">
+                                                    <div class="price-item">
+                                                        <span>R$</span>
+                                                        <span>34,00</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </button>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Parmegiana de Frango', 28, '/assets/images/cardapio/modals/meals/parmegiana.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/meals/parmegiana.jpg"
-                                                            alt="">
-                                                        <div class="title-item-fix"><span>Parmegiana de Frango</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>28,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Parmegiana de Carne', 32, '/assets/images/cardapio/modals/meals/parmegiana.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/meals/parmegiana.jpg"
-                                                            alt="">
-                                                        <div class="title-item-fix"><span>Parmegiana de Carne</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>32,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                            <!-- DOCES ITENS -->
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Petit Gateau', 28, '/assets/images/cardapio/modals/candies/petit_gateau.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/candies/petit_gateau.jpg"
-                                                            alt="">
-                                                        <div class="title-item"><span>Petit Gateau</span></div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>28,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Brownie', 25, '/assets/images/cardapio/modals/candies/brownie.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/candies/brownie.jpg"
-                                                            alt="">
-                                                        <div class="title-item"><span>Brownie</span></div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>25,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Taça Maravilha', 23, '/assets/images/cardapio/modals/candies/taca_maravilha.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/candies/taca_maravilha.jpg"
-                                                            alt="">
-                                                        <div class="title-item"><span>Taça Maravilha</span></div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>23,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Banana Split', 34, '/assets/images/cardapio/modals/candies/banana_split.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/candies/banana_split.jpg"
-                                                            alt="">
-                                                        <div class="title-item"><span>Banana Split</span></div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>34,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-item-card-list">
-                                    <button type="button" class="button-card-item" onclick="addToCart('Tiramisu', 40, '/assets/images/cardapio/modals/candies/tiramsu.jpg')">
-                                        <div class="card-item-list">
-                                            <div class="card">
-                                                <div class="card-body item-body">
-                                                    <div class="img-and-title-item">
-                                                        <img class="img-item-list"
-                                                            src="/assets/images/cardapio/modals/candies/tiramsu.jpg"
-                                                            alt="">
-                                                        <div class="title-item"><span>Tiramisu</span></div>
-                                                    </div>
-                                                    <div class="item-desc">
-                                                        <div class="price-item">
-                                                            <span>R$</span>
-                                                            <span>40,00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
+                                </button>
                     </div>
-                    <div class="modal-footer"></div>
+                    </li>
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Parmegiana de Frango', 28, '/assets/images/cardapio/modals/meals/parmegiana.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/meals/parmegiana.jpg" alt="">
+                                                <div class="title-item-fix"><span>Parmegiana de Frango</span>
+                                                </div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>28,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Parmegiana de Carne', 32, '/assets/images/cardapio/modals/meals/parmegiana.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/meals/parmegiana.jpg" alt="">
+                                                <div class="title-item-fix"><span>Parmegiana de Carne</span>
+                                                </div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>32,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <!-- DOCES ITENS -->
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Petit Gateau', 28, '/assets/images/cardapio/modals/candies/petit_gateau.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/candies/petit_gateau.jpg"
+                                                    alt="">
+                                                <div class="title-item"><span>Petit Gateau</span></div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>28,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Brownie', 25, '/assets/images/cardapio/modals/candies/brownie.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/candies/brownie.jpg" alt="">
+                                                <div class="title-item"><span>Brownie</span></div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>25,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Taça Maravilha', 23, '/assets/images/cardapio/modals/candies/taca_maravilha.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/candies/taca_maravilha.jpg"
+                                                    alt="">
+                                                <div class="title-item"><span>Taça Maravilha</span></div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>23,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Banana Split', 34, '/assets/images/cardapio/modals/candies/banana_split.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/candies/banana_split.jpg"
+                                                    alt="">
+                                                <div class="title-item"><span>Banana Split</span></div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>34,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-item-card-list">
+                            <button type="button" class="button-card-item"
+                                onclick="addToCart('Tiramisu', 40, '/assets/images/cardapio/modals/candies/tiramsu.jpg')">
+                                <div class="card-item-list">
+                                    <div class="card">
+                                        <div class="card-body item-body">
+                                            <div class="img-and-title-item">
+                                                <img class="img-item-list"
+                                                    src="/assets/images/cardapio/modals/candies/tiramsu.jpg" alt="">
+                                                <div class="title-item"><span>Tiramisu</span></div>
+                                            </div>
+                                            <div class="item-desc">
+                                                <div class="price-item">
+                                                    <span>R$</span>
+                                                    <span>40,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    </ul>
                 </div>
+                <div class="modal-footer"></div>
             </div>
+        </div>
         </div>
         <!-- MODAL FOR ITENS TO CART -->
     </section>

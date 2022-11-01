@@ -15,7 +15,7 @@
 .cart-icon {
     position: absolute;
     left: 49%;
-    bottom: 70%;
+    bottom:68%;
     color: var(--amarelo);
     font-size: 20px;
 }
@@ -35,7 +35,7 @@
 .container-card {
     color: var(--branco);
     background-color: var(--);
-    width: 800px;
+    width: 700px;
     border: none;
     border-radius: 20px;
 }
@@ -190,7 +190,7 @@ li {
 
 .container-div-card-cart {
     margin-top: 10px;
-    width: 810px;
+    width: 710px;
     height: 90px;
     background-color: var(--cinza);
     border-radius: 10px;
@@ -238,4 +238,45 @@ li {
     padding-right: 4px;
 }
 
+.change-quantity-btn{
+    position: relative;
+    left: 58%;
+    bottom: 60px;
+    max-width: 90px;
+    border: #f0da4f 2px solid;
+    border-radius: 10px;
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: #F0DB4F;
+}
+
+.quantidade-itens{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 5px;
+    left: 20%;
+}
+
+.add-btn{
+    width: 800px;
+}
+
+#itens-da-lista{
+    position: relative;
+    left: 28.5%;
+}
+
+.item-list{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
 /* ALERT */

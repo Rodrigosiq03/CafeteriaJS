@@ -19,39 +19,52 @@ function getAllItensFromLocalStorage() {
 
 function showProductsOnCart() {
   let allItens = getAllItensFromLocalStorage();
-  listaProdutos.innerHTML = ""
+  listaProdutos.innerHTML = "";
 
   allItens.forEach((item) => {
     let li = document.createElement("li");
+    li.className = "item-list"
     listaProdutos.appendChild(li);
 
-    let templateCopy = produtosCardTemplate.content.cloneNode(true)
-    
-    templateCopy.querySelector(".nome-produto").textContent = item["name"]
-    templateCopy.querySelector(".preco-produto").textContent = item["price"]
-    templateCopy.querySelector(".img-produto").src = item["src"]
+    let templateCopy = produtosCardTemplate.content.cloneNode(true);
 
-    li.appendChild(templateCopy)
+    templateCopy.querySelector(".nome-produto").textContent = item["name"];
+    templateCopy.querySelector(".preco-produto").textContent = item["price"];
+    templateCopy.querySelector(".img-produto").src = item["src"];
+
+    li.appendChild(templateCopy);
   });
 }
 
-function cleanProductsCart(){
-  localStorage.clear()
-  listaProdutos.innerHTML = ""
+function cleanProductsCart() {
+  localStorage.clear();
+  listaProdutos.innerHTML = "";
 }
 
-function addToCart(productName, price, imageSrc){
+function addToCart(productName, price, imageSrc) {
   const product = {
-      name: productName,
-      price: price,
-      src: imageSrc
-  }
+    name: productName,
+    price: price,
+    src: imageSrc,
+  };
   localStorage.setItem(productName, JSON.stringify(product));
-  showProductsOnCart()
+  showProductsOnCart();
 }
 
-showProductsOnCart()
+showProductsOnCart();
 
 function goToPagamentoPage() {
   window.location.href = "pagamento.html";
+}
+
+function AddQuantityItens(btnElement, addQuantity) {
+  let divElement = btnElement.parentElement.parentElement.children[1];
+
+  let newDivValue = parseInt(divElement.innerText) + addQuantity;
+
+  if (newDivValue < 0) {
+    return;
+  }
+
+  divElement.innerText = newDivValue;
 }
