@@ -89,7 +89,7 @@
                             <h3 class="title-h3">Unidade escolhida</h3>
                             <button class="edit-button" onclick="unityModal()">Editar</button>
                         </div>
-                        <h3 class="adress-cafeteria">CafeteriaJS SBC - Av. Dr Rudge Ramos, 512</h3>
+                        <h3 id="cafeteriajs-adress" class="visually-hidden adress-cafeteria">CafeteriaJS SBC - Av. Dr Rudge Ramos, 512</h3>
                     </div>
                     <div class="pagamento-container">
                         <div class="up-line-content">
@@ -313,10 +313,16 @@
                     </div>
                     <div class="time-data-container">
                         <div class="data-time-line">
-                            <h4 id="weekday">Quinta-Feira,</h4>
-                            <h4 id="day-for-data">6</h4>
-                            <h4 id="just-complement">de</h4>
-                            <h4 id="month-for-data">Outubro</h4>
+                            <div id="day-month" class="visually-hidden">
+                                <h4 id="weekday">Quinta-Feira,</h4>
+                                <h4 id="day-for-data">6</h4>
+                                <h4 id="just-complement-day">de</h4>
+                                <h4 id="month-for-data">Outubro</h4>
+                            </div>
+                            <div id="time-complement" class="visually-hidden">
+                                <h4 id="just-complement-time">às</h4>
+                                <h4 id="time-for-data">08:00 - 08:30</h4>
+                            </div>
                         </div>
                         <div class="radio-option-time">
                             <button id="time-1" class="radio-button" onclick="selectTime(this)"></button>
@@ -358,7 +364,6 @@
                             <button id="time-10" class="radio-button" onclick="selectTime(this)"></button>
                             <h5>12:30 - 13:00</h5>
                         </div>
-                        <div class="time-selected-container"></div>
                     </div>
                 </div>
             </div>

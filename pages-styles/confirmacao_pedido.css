@@ -23,11 +23,12 @@
 .container-confirmation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--cinza);
-    width: 550px;
+    width: 700px;
     height: 70px;
+    padding-left: 20px;
     margin-right: 0;
     border-radius: 10px;
 }
@@ -38,12 +39,40 @@
     border-radius: 50px;
     background-color: var(--card);
 }
+.container-confirmation h1 {
+    padding-left: 85px;
+}
+
+.adress-cafeteria {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
 .date-time-ordered {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row ;
+    flex-direction: row;
+}
+.date-time-ordered h3 {
+    font-size: 25px;
+    font-weight: bold;
 }
 .date-ordered {
     padding-right: 15px;
+}
+
+.num-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.randomInt {
+    padding-left: 10px;
+}
+.num-pedido .label {
+    color: var(--amarelo);
+    font-weight: bold;
 }

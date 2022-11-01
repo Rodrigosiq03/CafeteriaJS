@@ -278,9 +278,29 @@
 .data-time-line {
     display: flex;
     flex-direction: row;
-    width: 290px;
-    justify-content: space-between;
+    width: 500px;
     padding-top: 5px;
+}
+#day-month {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 7px;
+}
+#weekday {
+    padding-right: 7px;
+}
+#just-complement-day {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#time-complement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#just-complement-time {
+    padding-right: 7px;
 }
 .radio-option-time {
     display: flex;
