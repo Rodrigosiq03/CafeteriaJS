@@ -35,7 +35,7 @@ main {
 }
 
 
-@media (max-width: 360px) and (min-width:260px){
+@media (max-width: 400px){
   .section p{
     font-size: 60%;
     font-weight: 500;
@@ -43,5 +43,16 @@ main {
     padding-right: 0px;
     margin-left: 0px;
     border-right: 0px;
+    
+  }
+
+  .section img{
+    break-after: auto;
+  }
+}
+
+@media screen and (max-width: 1390px){
+  .picasso{
+    margin-top: auto;
   }
 }
