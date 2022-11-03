@@ -1,0 +1,56 @@
+article img {
+    width: 300px;
+    height: 300px;
+    border: none;
+}
+/* editar bebidas */
+.bebidas {
+    display: flex;
+    justify-content: center;
+    padding: 100px, 100px;
+}
+.h1-title {
+    border-bottom: 1px solid var(--amarelo);
+    margin: 0px 0px 0px 0px !important;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 3%;
+}
+.margin-h1 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.cafe_img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--amarelo);
+}
+/* CARD-INFO feito na mão, precisa ser editado com cuidado */
+.card-info{
+    margin: 50px;
+}
+/* editar tanto container card quanto card e os outros cards também, são eles q deixam branco quando tiro fora */
+.container-card {
+    color: var(--branco);
+    background-color: var(--card);
+    width: 1000px;
+    border: none;
+    border-radius: 20px;
+}
+.card {
+    background-color: var(--card);
+    border: none;
+    border-radius: 20px;
+}
+.card-body {
+    display: table-column
+}
+.card-spaces {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+
+
+
