@@ -345,3 +345,28 @@ function goToMenuPage() {
 function goToCartPage() {
     window.location.href = "carrinho.html";
 }
+
+const cardnumber = document.getElementById('cardnumber');
+
+cardnumber.addEventListener('keyup', (e) => maskCardNumber(e.target.value));
+cardnumber.addEventListener('change' , (e) => maskCardNumber(e.target.value));
+
+const maskCardNumber = (value) => { // máscara para o número do cartão
+    value = value.replace(/[^0-9]+/g, '');
+    value = value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+    cardnumber.value = value
+}
+
+function limit(element) // limitar número de caracteres
+{
+    var max_chars = 19;
+
+    if(element.value.length > max_chars) {
+        element.value = element.value.substr(0, max_chars);
+    }
+}
+
+$(".dropdown-item").click(function(){
+    $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="placeholder"></span>');
+    $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+  });
