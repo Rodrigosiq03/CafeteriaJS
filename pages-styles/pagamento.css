@@ -168,6 +168,10 @@
     color: var(--fundo);
     font-size: 20px;
 }
+
+.meses-menu, .anos-menu {
+    padding: 0;
+}
 .item-quantity-container {
     display: flex;
     flex-direction: row;
@@ -535,14 +539,17 @@ input[type=number] {
 
 .expiration-date {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     width: 300px;
 }
 
 .dropdown-choose-month {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.dropdown-choose-month {
+    padding: 15px 20px;
 }
 .dropdown-choose-month button {
     background-color: var(--cinza);
@@ -572,7 +579,7 @@ input[type=number] {
     padding-top: 10px;
 }
 .name-card {
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 10px;
 }
 /* PIX SELECTED STYLES */
