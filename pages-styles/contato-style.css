@@ -3,8 +3,8 @@ article img {
     height: 300px;
     border: none;
 }
-/* editar bebidas */
-.bebidas {
+/* editar lugares */
+.lugares {
     display: flex;
     justify-content: center;
     padding: 100px, 100px;
@@ -20,7 +20,7 @@ article img {
     margin-left: 200px;
     margin-right: 200px;
 }
-.cafe_img {
+.lugar_img {
     width: 300px;
     height: 300px;
     border: 2px solid var(--amarelo);
@@ -48,6 +48,17 @@ article img {
 .card-spaces {
     padding-top: 7px;
     padding-bottom: 7px;
+}
+
+/* Css dos detalhes */
+#icons-contato{
+    color: #F0DB4F;
+}
+
+#linha-vert{
+    height: 105px;
+    border-left: 5px solid #F0DB4F;
+    padding-left: 50px;
 }
 
 
