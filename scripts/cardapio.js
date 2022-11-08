@@ -39,6 +39,7 @@ function addToCart(productName, price, imageSrc) {
     const product = {
         name: productName,
         price: price,
+        quantity:1,
         src: imageSrc
     }
     localStorage.setItem(productName, JSON.stringify(product));
