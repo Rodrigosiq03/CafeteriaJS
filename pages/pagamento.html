@@ -1,547 +1,406 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="../global-styles.css">
-        <link rel="stylesheet" href="../pages-styles/pagamento.css">
-        <title>Pagamento</title>
-    </head>
-    <body>
 
-        <nav class="navbar navbar-expand-lg navbar-custom fixed top">
-            <div class="container-fluid">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse justify-content-around navbar-custom fixed top"
-                    id="navbarNav">
-                    <ul class="navbar-nav navbar-custom">
-                        <li>
-                            <a href="index.html">
-                                <div class="home-icon">
-                                    <i class="fa fa-house" aria-hidden="true"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/pagamento.html">Agendamento de pedido</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/contato.html">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
-                        </li>
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../global-styles.css">
+    <link rel="stylesheet" href="../pages-styles/pagamento.css">
+    <title>Pagamento</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around navbar-custom fixed top" id="navbarNav">
+                <ul class="navbar-nav navbar-custom">
+                    <li>
+                        <a href="index.html">
+                            <div class="home-icon">
+                                <i class="fa fa-house" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/pagamento.html">Agendamento de pedido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled d-none d-lg-block d-xl-block d-xxl-block" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/sobre-nos.html">Sobre Nós</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm col-md-12 text-center">
+                    <img src="/assets/logos/logo_st.png" alt="Logo da CafeteriaJS" class="rounded-logo">
                 </div>
             </div>
-        </nav>
-        <article>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm col-md-12 text-center">
-                        <img
-                            src="/assets/logos/logo_st.png"
-                            alt="Logo da CafeteriaJS"
-                            class="rounded-logo">
+        </div>
+    </article>
+    <main>
+        <div class="container-content">
+            <div class="container-left">
+                <div class="unidade-container">
+                    <div class="up-line-content">
+                        <h3 class="title-h3">Escolha a Unidade</h3>
+                        <button class="edit-button" onclick="unityModal()">Editar</button>
+                    </div>
+                    <h3 id="cafeteriajs-adress" class="visually-hidden adress-cafeteria">CafeteriaJS SBC - Av. Dr Rudge
+                        Ramos, 512</h3>
+                </div>
+                <div class="pagamento-container">
+                    <div class="up-line-content">
+                        <h3 class="title-h3">Métodos de Pagamento</h3>
+                        <button class="edit-button" onclick="paymentModal()">Editar</button>
+                    </div>
+                    <div class="payment-information">
+                        <img src="/assets/images/pagamento/visa_logo.png" class="visa-img" alt="">
+                        <div class="card-information">
+                            <h3 class="card-number">**** **** ****</h3>
+                            <h3 class="final-card-number">1234</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </article>
-        <main>
-            <div class="container-content">
-                <div class="container-left">
-                    <div class="unidade-container">
-                        <div class="up-line-content">
-                            <h3 class="title-h3">Escolha a Unidade</h3>
-                            <button class="edit-button" onclick="unityModal()">Editar</button>
+                <div class="itens-container">
+                    <div class="up-line-content itens-up-line">
+                        <div class="right-itens">
+                            <h3 class="title-h3">Itens</h3>
+                            <div class="itens-counter-up-line">
+                                <span>(</span>
+                                <span id="itens-counter">2</span>
+                                <span>)</span>
+                            </div>
                         </div>
-                        <h3 id="cafeteriajs-adress" class="visually-hidden adress-cafeteria">CafeteriaJS SBC - Av. Dr Rudge Ramos, 512</h3>
+                        <button class="add-itens-button" onclick="goToMenuPage()">Adicionar itens</button>
                     </div>
-                    <div class="pagamento-container">
-                        <div class="up-line-content">
-                            <h3 class="title-h3">Métodos de Pagamento</h3>
-                            <button class="edit-button" onclick="paymentModal()">Editar</button>
-                        </div>
-                        <div class="payment-information">
-                            <img src="/assets/images/pagamento/visa_logo.png" class="visa-img" alt="">
-                            <div class="card-information">
-                                <h3 class="card-number">**** **** ****</h3>
-                                <h3 class="final-card-number">1234</h3>
-                            </div>
+                    <div class="quantity-information">
+                        <div class="container-dropdown-itens" id="itens-container">
+
+                            <template id="item-template">
+                                <div class="item-quantity-container">
+                                    <div class="itens-right-side">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle dropdown-button-item"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                1 <!--Quantidade do determinado item   -->
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">1</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">3</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">4</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 id="item-name"></h5>
+                                    </div>
+                                    <div class="price">
+                                        <h5>R$</h5>
+                                        <h5 id="price-item-quantity"></h5>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <!-- o item vem aqui, parça -->
+                            
                         </div>
                     </div>
-                    <div class="itens-container">
-                        <div class="up-line-content itens-up-line">
-                            <div class="right-itens">
-                                <h3 class="title-h3">Itens</h3>
-                                <div class="itens-counter-up-line">
-                                    <span>(</span>
-                                    <span id="itens-counter">2</span>
-                                    <span>)</span>
-                                </div>
-                            </div>
-                            <button class="add-itens-button" onclick="goToMenuPage()">Adicionar itens</button>
-                        </div>
-                        <div class="quantity-information">
-                            <div class="container-dropdown-itens">
-                                <div class="item-quantity-container">
-                                    <div class="itens-right-side">
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn btn-secondary dropdown-toggle dropdown-button-item"
-                                                type="button"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                1
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">2</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">3</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">4</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">5</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h5>Misto Quente</h5>
-                                    </div>
-                                    <div class="price">
-                                        <h5>R$</h5>
-                                        <h5 id="price-item-quantity">8</h5>
-                                    </div>
-                                </div>
-                                <div class="item-quantity-container">
-                                    <div class="itens-right-side">
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn btn-secondary dropdown-toggle dropdown-button-item"
-                                                type="button"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                1
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">2</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">3</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">4</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">5</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h5>Expresso</h5>
-                                    </div>
-                                    <div class="price">
-                                        <h5>R$</h5>
-                                        <h5 id="price-item-quantity">8</h5>
-                                    </div>
-                                </div>
-                                <div class="item-quantity-container">
-                                    <div class="itens-right-side">
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn btn-secondary dropdown-toggle dropdown-button-item"
-                                                type="button"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                1
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">2</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">3</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">4</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">5</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h5>Petit Gateau</h5>
-                                    </div>
-                                    <div class="price">
-                                        <h5>R$</h5>
-                                        <h5 id="price-item-quantity">28</h5>
-                                    </div>
-                                </div>
-                                <div class="item-quantity-container">
-                                    <div class="itens-right-side">
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn btn-secondary dropdown-toggle dropdown-button-item"
-                                                type="button"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                1
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">1</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">2</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">3</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">4</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">5</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h5>Filet Mignon</h5>
-                                    </div>
-                                    <div class="price">
-                                        <h5>R$</h5>
-                                        <h5 id="price-item-quantity">30</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="total-price-container">
-                            <div class="total-price">
-                                <h4>Total:</h5>
+                    <div class="total-price-container">
+                        <div class="total-price">
+                            <h4>Total:</h5>
                                 <div class="left-side-total-price">
                                     <h4>R$</h5>
-                                    <h4 id="total-price">74</h5>
+                                        <h4 id="total-price">74</h5>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-right">
-                    <div class="data-container">
-                        <div class="up-line-content">
-                            <h3 class="title-h3">Escolher data e horário</h3>
-                        </div>
-                        <div class="down-line-content">
-                            <div class="date-container">
-                                <div class="dates">
-                                    <button id="date-1" class="card-date-button" onclick="selectData(this)">
-                                        <h5 class="weekday">Ter</h5>
-                                        <div class="underline-data">
-                                            <h5 class="month-for-data">Out.</h5>
-                                            <h5 class="day-for-data">4</h5>
-                                        </div>
-                                    </button>
-                                    <button id="date-2" class="card-date-button" onclick="selectData(this)">
-                                        <h5 class="weekday">Qua</h5>
-                                        <div class="underline-data">
-                                            <h5 class="month-for-data">Out.</h5>
-                                            <h5 class="day-for-data">5</h5>
-                                        </div>
-                                    </button>
-                                    <button id="date-3" class="card-date-button" onclick="selectData(this)">
-                                        <h5 class="weekday">Qui</h5>
-                                        <div class="underline-data">
-                                            <h5 class="month-for-data">Out.</h5>
-                                            <h5 class="day-for-data">6</h5>
-                                        </div>
-                                    </button>
-                                    <button id="date-4" class="card-date-button" onclick="selectData(this)">
-                                        <h5 class="weekday">Sex</h5>
-                                        <div class="underline-data">
-                                            <h5 class="month-for-data">Out.</h5>
-                                            <h5 class="day-for-data">7</h5>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="time-data-container">
-                        <div class="data-time-line">
-                            <div id="day-month" class="visually-hidden">
-                                <h4 id="weekday">Quinta-Feira,</h4>
-                                <h4 id="day-for-data">6</h4>
-                                <h4 id="just-complement-day">de</h4>
-                                <h4 id="month-for-data">Outubro</h4>
-                            </div>
-                            <div id="time-complement" class="visually-hidden">
-                                <h4 id="just-complement-time">às</h4>
-                                <h4 id="time-for-data">08:00 - 08:30</h4>
-                            </div>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-1" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>08:00 - 08:30</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-2" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>08:30 - 09:00</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-3" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>09:00 - 09:30</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-4" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>09:30 - 10:00</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-5" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>10:00 - 10:30</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-6" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>10:30 - 11:00</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-7" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>11:00 - 11:30</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-8" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>11:30 - 12:00</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-9" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>12:00 - 12:30</h5>
-                        </div>
-                        <div class="radio-option-time">
-                            <button id="time-10" class="radio-button" onclick="selectTime(this)"></button>
-                            <h5>12:30 - 13:00</h5>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <button class="back-to-cart" onclick="goToCartPage()">Voltar ao carrinho</button>
-            <button class="schedule" onclick="goToOrderDone()">Agendar pedido</button>
-        </footer>
-        <!-- POP UP CHOOSE UNITY FOR CAFETERIA JS -->
-        <section>
-            <div
-                class="modal fade"
-                id="unityModal"
-                tabindex="-1"
-                aria-labelledby="unityModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header unity-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Escolha a Unidade para realizar seu agendamento</h1>
-                        </div>
-                        <div class="modal-body unity-body">
-                            <div class="unity-card-button">
-                                <button onclick="unitySelectedSBC()">
-                                    <h5>Unidade São Bernardo</h5>
-                                </button>
-                            </div>
-                            <div class="unity-card-button">
-                                <button onclick="unitySelectedSantos()">
-                                    <h5>Unidade Santos</h5>
-                                </button>
-                            </div>
-                            <div class="unity-card-button">
-                                <button onclick="unitySelectedSuz()">
-                                    <h5>Unidade Suzano</h5>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="modal-footer unity-footer-pop-up">
-                            <button
-                                type="button"
-                                class="btn btn-secondary close-button-pop-up"
-                                data-bs-dismiss="modal">Close</button>
-                        </div>
+            <div class="container-right">
+                <div class="data-container">
+                    <div class="up-line-content">
+                        <h3 class="title-h3">Escolher data e horário</h3>
                     </div>
-                </div>
-            </div>
-            <!-- MODAL FOR PAYMENT -->
-            <div
-                class="modal fade"
-                id="paymentModal"
-                tabindex="-1"
-                aria-labelledby="paymentModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header payment-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                Escolha sua forma de pagamento</h1>
-                        </div>
-                        <div class="modal-body payment-body">
-                            <div class="dropdown dropdown-choose-payment">
-                                <button
-                                    class="btn btn-secondary dropdown-toggle name-payment-selection"
-                                    type="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Escolha aqui
-                                </button>
-                                <ul class="dropdown-menu menu-payment">
-                                    <li>
-                                        <button onclick="creditCardSelected()">Cartao de Crédito</button>
-                                    </li>
-                                    <li>
-                                        <button onclick="pixSelected()">Pix</button>
-                                    </li>
-                                    <li>
-                                        <button onclick="onDelivery()">Pagamento na entrega</button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- CARTAO DE CRÉDITO -->
-                            <div class="visually-hidden credit-card-selected">
-                                <div class="card-number-container-pop-up number-card-label">
-                                    <h5>Número do Cartão</h5>
-                                    <input type="text" pattern="^[a-zA-Z0-9\.]*$" step="0000.0000.0000.0000" id="inputNumber" class="card-number-input" placeholder="0000 0000 0000 0000">
-                                </div>
-                                <div class="expiration-date">
-                                    <!-- MONTH SELECTIONS -->
-                                    <div class="dropdown dropdown-choose-month">
-                                        <button
-                                            class="btn btn-secondary dropdown-toggle"
-                                            type="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            01
-                                        </button>
-                                        <ul class="dropdown-menu menu-payment">
-                                            <li></li>
-                                        </ul>
+                    <div class="down-line-content">
+                        <div class="date-container">
+                            <div class="dates">
+                                <button id="date-1" class="card-date-button" onclick="selectData(this)">
+                                    <h5 class="weekday">Ter</h5>
+                                    <div class="underline-data">
+                                        <h5 class="month-for-data">Out.</h5>
+                                        <h5 class="day-for-data">4</h5>
                                     </div>
-                                    <!-- YEAR SELECTIONS -->
-                                    <div class="dropdown dropdown-choose-year">
-                                        <button
-                                            class="btn btn-secondary dropdown-toggle"
-                                            type="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            2022
-                                        </button>
-                                        <ul class="dropdown-menu menu-payment">
-                                            <li></li>
-                                        </ul>
+                                </button>
+                                <button id="date-2" class="card-date-button" onclick="selectData(this)">
+                                    <h5 class="weekday">Qua</h5>
+                                    <div class="underline-data">
+                                        <h5 class="month-for-data">Out.</h5>
+                                        <h5 class="day-for-data">5</h5>
                                     </div>
-                                </div>
-                                <div class="card-number-container-pop-up name-card">
-                                    <h5>Nome do Titular</h5>
-                                    <input type="text" id="inputName" class="card-number-input" placeholder="Nome do Titular">
-                                </div>
+                                </button>
+                                <button id="date-3" class="card-date-button" onclick="selectData(this)">
+                                    <h5 class="weekday">Qui</h5>
+                                    <div class="underline-data">
+                                        <h5 class="month-for-data">Out.</h5>
+                                        <h5 class="day-for-data">6</h5>
+                                    </div>
+                                </button>
+                                <button id="date-4" class="card-date-button" onclick="selectData(this)">
+                                    <h5 class="weekday">Sex</h5>
+                                    <div class="underline-data">
+                                        <h5 class="month-for-data">Out.</h5>
+                                        <h5 class="day-for-data">7</h5>
+                                    </div>
+                                </button>
                             </div>
-                            <!-- PIX -->
-                            <div class="visually-hidden pix-selected">
-                                <div class="logo">
-                                    <img
-                                        src="/assets/logos/logo_st.png"
-                                        alt="Logo da CafeteriaJS"
-                                        class="logo-pix">
-                                </div>
-                                <h3 class="label-value">Valor da compra:
-                                </h3>
-                                <div class="final-price-pix">
-                                    <h3>R$</h3>
-                                    <h3>74</h3>
-                                    <h3>,00</h3>
-                                </div>
-                                <div class="qr-code-pix">
-                                    <img
-                                        class="qr-code-img"
-                                        src="/assets/images/pagamento/cafeteria_js_qr_code.png"
-                                        alt="qr_code">
-                                </div>
-                                <div class="instructions-pix">
-                                    <h3>Instruções para o pagamento:</h3>
-                                    <h3>1 - Abra o aplicattivo do seu banco no seu smartphone;</h3>
-                                    <h3>2 - Vá na aba de Pix;</h3>
-                                    <h3>3 - Encontre a opção de pagar com QR Code</h3>
-                                    <h3>4 - Apenas aproxime a camera de seu celular para a leitura</h3>
-                                    <h3>5 - Está feita sua compra!</h3>
-                                </div>
-                            </div>
-                            <!-- PAGAMENTO NA ENTREGA -->
-                            <div class="visually-hidden on-delivery-selected">
-                                <h3 class="label-value">Valor da compra:
-                                </h3>
-                                <div class="final-price-pix">
-                                    <h3>R$</h3>
-                                    <h3>74</h3>
-                                    <h3>,00</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer payment-footer-pop-up">
-                            <button
-                                type="button"
-                                class="btn btn-secondary close-button-pop-up payment-close-button"
-                                data-bs-dismiss="modal"
-                                onclick="setHidden()">Close</button>
                         </div>
                     </div>
                 </div>
+                <div class="time-data-container">
+                    <div class="data-time-line">
+                        <div id="day-month" class="visually-hidden">
+                            <h4 id="weekday">Quinta-Feira,</h4>
+                            <h4 id="day-for-data">6</h4>
+                            <h4 id="just-complement-day">de</h4>
+                            <h4 id="month-for-data">Outubro</h4>
+                        </div>
+                        <div id="time-complement" class="visually-hidden">
+                            <h4 id="just-complement-time">às</h4>
+                            <h4 id="time-for-data">08:00 - 08:30</h4>
+                        </div>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-1" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>08:00 - 08:30</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-2" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>08:30 - 09:00</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-3" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>09:00 - 09:30</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-4" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>09:30 - 10:00</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-5" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>10:00 - 10:30</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-6" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>10:30 - 11:00</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-7" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>11:00 - 11:30</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-8" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>11:30 - 12:00</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-9" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>12:00 - 12:30</h5>
+                    </div>
+                    <div class="radio-option-time">
+                        <button id="time-10" class="radio-button" onclick="selectTime(this)"></button>
+                        <h5>12:30 - 13:00</h5>
+                    </div>
+                </div>
             </div>
+        </div>
+    </main>
+    <footer>
+        <button class="back-to-cart" onclick="goToCartPage()">Voltar ao carrinho</button>
+        <button class="schedule" onclick="goToOrderDone()">Agendar pedido</button>
+    </footer>
+    <!-- POP UP CHOOSE UNITY FOR CAFETERIA JS -->
+    <section>
+        <div class="modal fade" id="unityModal" tabindex="-1" aria-labelledby="unityModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header unity-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Escolha a Unidade para realizar seu
+                            agendamento</h1>
+                    </div>
+                    <div class="modal-body unity-body">
+                        <div class="unity-card-button">
+                            <button onclick="unitySelectedSBC()">
+                                <h5>Unidade São Bernardo</h5>
+                            </button>
+                        </div>
+                        <div class="unity-card-button">
+                            <button onclick="unitySelectedSantos()">
+                                <h5>Unidade Santos</h5>
+                            </button>
+                        </div>
+                        <div class="unity-card-button">
+                            <button onclick="unitySelectedSuz()">
+                                <h5>Unidade Suzano</h5>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer unity-footer-pop-up">
+                        <button type="button" class="btn btn-secondary close-button-pop-up"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL FOR PAYMENT -->
+        <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header payment-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Escolha sua forma de pagamento</h1>
+                    </div>
+                    <div class="modal-body payment-body">
+                        <div class="dropdown dropdown-choose-payment">
+                            <button class="btn btn-secondary dropdown-toggle name-payment-selection" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Escolha aqui
+                            </button>
+                            <ul class="dropdown-menu menu-payment">
+                                <li>
+                                    <button onclick="creditCardSelected()">Cartao de Crédito</button>
+                                </li>
+                                <li>
+                                    <button onclick="pixSelected()">Pix</button>
+                                </li>
+                                <li>
+                                    <button onclick="onDelivery()">Pagamento na entrega</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- CARTAO DE CRÉDITO -->
+                        <div class="visually-hidden credit-card-selected">
+                            <div class="card-number-container-pop-up number-card-label">
+                                <h5>Número do Cartão</h5>
+                                <input type="text" pattern="^[a-zA-Z0-9\.]*$" step="0000.0000.0000.0000"
+                                    id="inputNumber" class="card-number-input" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="expiration-date">
+                                <!-- MONTH SELECTIONS -->
+                                <div class="dropdown dropdown-choose-month">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        01
+                                    </button>
+                                    <ul class="dropdown-menu menu-payment">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <!-- YEAR SELECTIONS -->
+                                <div class="dropdown dropdown-choose-year">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        2022
+                                    </button>
+                                    <ul class="dropdown-menu menu-payment">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-number-container-pop-up name-card">
+                                <h5>Nome do Titular</h5>
+                                <input type="text" id="inputName" class="card-number-input"
+                                    placeholder="Nome do Titular">
+                            </div>
+                        </div>
+                        <!-- PIX -->
+                        <div class="visually-hidden pix-selected">
+                            <div class="logo">
+                                <img src="/assets/logos/logo_st.png" alt="Logo da CafeteriaJS" class="logo-pix">
+                            </div>
+                            <h3 class="label-value">Valor da compra:
+                            </h3>
+                            <div class="final-price-pix">
+                                <h3>R$</h3>
+                                <h3>74</h3>
+                                <h3>,00</h3>
+                            </div>
+                            <div class="qr-code-pix">
+                                <img class="qr-code-img" src="/assets/images/pagamento/cafeteria_js_qr_code.png"
+                                    alt="qr_code">
+                            </div>
+                            <div class="instructions-pix">
+                                <h3>Instruções para o pagamento:</h3>
+                                <h3>1 - Abra o aplicattivo do seu banco no seu smartphone;</h3>
+                                <h3>2 - Vá na aba de Pix;</h3>
+                                <h3>3 - Encontre a opção de pagar com QR Code</h3>
+                                <h3>4 - Apenas aproxime a camera de seu celular para a leitura</h3>
+                                <h3>5 - Está feita sua compra!</h3>
+                            </div>
+                        </div>
+                        <!-- PAGAMENTO NA ENTREGA -->
+                        <div class="visually-hidden on-delivery-selected">
+                            <h3 class="label-value">Valor da compra:
+                            </h3>
+                            <div class="final-price-pix">
+                                <h3>R$</h3>
+                                <h3>74</h3>
+                                <h3>,00</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer payment-footer-pop-up">
+                        <button type="button" class="btn btn-secondary close-button-pop-up payment-close-button"
+                            data-bs-dismiss="modal" onclick="setHidden()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        </section>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="/scripts/pagamento.js"></script>
-    </body>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/scripts/pagamento.js"></script>
+</body>
+
 </html>
