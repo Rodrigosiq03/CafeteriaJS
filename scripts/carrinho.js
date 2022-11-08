@@ -23,7 +23,7 @@ function showProductsOnCart() {
 
   allItens.forEach((item) => {
     let li = document.createElement("li");
-    li.className = "item-list"
+    li.className = "item-list";
     listaProdutos.appendChild(li);
 
     let templateCopy = produtosCardTemplate.content.cloneNode(true);
@@ -45,7 +45,7 @@ function addToCart(productName, price, imageSrc, quantity) {
   const product = {
     name: productName,
     price: price,
-    quantity:quantity,
+    quantity: quantity,
     src: imageSrc,
   };
   localStorage.setItem(productName, JSON.stringify(product));
@@ -59,13 +59,20 @@ function goToPagamentoPage() {
 }
 
 function AddQuantityItens(btnElement, addQuantity) {
-  let divElement = btnElement.parentElement.parentElement.children[1];
+  let divElementQuantityAmount = btnElement.parentElement.parentElement.children[1];
+  const templateElement = btnElement.parentElement.parentElement.parentElement.parentElement
 
-  let newDivValue = parseInt(divElement.innerText) + addQuantity;
+  let newDivValue = parseInt(divElementQuantityAmount.innerText) + addQuantity;
 
   if (newDivValue < 0) {
     return;
   }
 
-  divElement.innerText = newDivValue;
+  let nomeProduto = templateElement.querySelector('.nome-produto').innerText
+  let product = JSON.parse(localStorage.getItem(nomeProduto))
+
+  product['quantity'] = newDivValue
+  localStorage.setItem(nomeProduto, JSON.stringify(product));
+
+  divElementQuantityAmount.innerText = newDivValue;
 }
