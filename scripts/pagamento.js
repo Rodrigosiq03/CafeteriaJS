@@ -27,6 +27,17 @@ function InitializeItensContainer() {
 }
 
 InitializeItensContainer();
+CalculateTotalPrice()
+function CalculateTotalPrice(){
+    let allItensInLocalStorage = getAllItensFromLocalStorage();
+    let totalPrice = 0
+
+    allItensInLocalStorage.forEach(item => {
+        totalPrice += Number(item['price']) * item['quantity']
+    });
+
+    document.getElementById('total-price').innerText = totalPrice
+}
 
 function ChangeQuantityButton(buttonElement, quantity) {
   let itemQuantityContainer =
@@ -48,6 +59,7 @@ function ChangeQuantityButton(buttonElement, quantity) {
   };
 
   localStorage.setItem(itemName, JSON.stringify(product));
+  CalculateTotalPrice()
 }
 
 // MODALS
