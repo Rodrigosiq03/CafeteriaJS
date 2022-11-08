@@ -84,10 +84,10 @@
                         <button class="edit-button" onclick="paymentModal()">Editar</button>
                     </div>
                     <div class="payment-information">
-                        <img src="/assets/images/pagamento/visa_logo.png" class="visa-img" alt="">
+                        <img src="/assets/images/pagamento/visa_logo.png" class="visa-img visually-hidden" alt="">
                         <div class="card-information">
-                            <h3 class="card-number">**** **** ****</h3>
-                            <h3 class="final-card-number">1234</h3>
+                            <h3 class="card-number card-number-hidden visually-hidden">**** **** ****</h3>
+                            <h3 class="final-card-number visually-hidden">1234</h3>
                         </div>
                     </div>
                 </div>
@@ -112,24 +112,29 @@
                                         <div class="dropdown">
                                             <button class="btn btn-secondary dropdown-toggle dropdown-button-item"
                                                 type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                                id="quantity-button" >
+                                                id="quantity-button">
 
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a class="dropdown-item" href="#" onclick="ChangeQuantityButton(this, 1)">1</a>
+                                                    <a class="dropdown-item" href="#"
+                                                        onclick="ChangeQuantityButton(this, 1)">1</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#" onclick="ChangeQuantityButton(this, 2)">2</a>
+                                                    <a class="dropdown-item" href="#"
+                                                        onclick="ChangeQuantityButton(this, 2)">2</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#" onclick="ChangeQuantityButton(this, 3)">3</a>
+                                                    <a class="dropdown-item" href="#"
+                                                        onclick="ChangeQuantityButton(this, 3)">3</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#" onclick="ChangeQuantityButton(this, 4)">4</a>
+                                                    <a class="dropdown-item" href="#"
+                                                        onclick="ChangeQuantityButton(this, 4)">4</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#" onclick="ChangeQuantityButton(this, 5)">5</a>
+                                                    <a class="dropdown-item" href="#"
+                                                        onclick="ChangeQuantityButton(this, 5)">5</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -151,7 +156,8 @@
                             <h4>Total:</h5>
                                 <div class="left-side-total-price">
                                     <h4>R$</h5>
-                                        <h4 id="total-price"></h5>
+                                        <h4 id="total-price">
+                                            </h5>
                                 </div>
                         </div>
                     </div>
@@ -318,40 +324,67 @@
                             </ul>
                         </div>
                         <!-- CARTAO DE CRÉDITO -->
-                        <div class="visually-hidden credit-card-selected">
-                            <div class="card-number-container-pop-up number-card-label">
-                                <h5>Número do Cartão</h5>
-                                <input type="text" pattern="^[a-zA-Z0-9\.]*$" step="0000.0000.0000.0000"
-                                    id="inputNumber" class="card-number-input" placeholder="0000 0000 0000 0000">
-                            </div>
-                            <div class="expiration-date">
-                                <!-- MONTH SELECTIONS -->
-                                <div class="dropdown dropdown-choose-month">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        01
-                                    </button>
-                                    <ul class="dropdown-menu menu-payment">
-                                        <li></li>
-                                    </ul>
+                        <form action="" id="data-from-credit-card">
+                            <div class="visually-hidden credit-card-selected">
+                                <div class="card-number-container-pop-up number-card-label">
+                                    <h5>Número do Cartão</h5>
+                                    <input type="text" id="cardnumber" name="cardnumber" onkeydown="limit(this)"
+                                        onkeyup="limit(this)" data-mask="0000 0000 0000 0000"
+                                        data-mask-selectionfocus="true" placeholder="0000 0000 0000 0000">
                                 </div>
-                                <!-- YEAR SELECTIONS -->
-                                <div class="dropdown dropdown-choose-year">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        2022
-                                    </button>
-                                    <ul class="dropdown-menu menu-payment">
-                                        <li></li>
-                                    </ul>
+                                <div class="expiration-date">
+                                    <!-- MONTH SELECTIONS -->
+                                    <div class="dropdown dropdown-choose-month">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            01
+                                        </button>
+                                        <div class="dropdown-menu meses-menu">
+                                            <button class="dropdown-item" type="button">01</button>
+                                            <button class="dropdown-item" type="button">02</button>
+                                            <button class="dropdown-item" type="button">03</button>
+                                            <button class="dropdown-item" type="button">04</button>
+                                            <button class="dropdown-item" type="button">05</button>
+                                            <button class="dropdown-item" type="button">06</button>
+                                            <button class="dropdown-item" type="button">07</button>
+                                            <button class="dropdown-item" type="button">08</button>
+                                            <button class="dropdown-item" type="button">09</button>
+                                            <button class="dropdown-item" type="button">10</button>
+                                            <button class="dropdown-item" type="button">11</button>
+                                            <button class="dropdown-item" type="button">12</button>
+                                        </div>
+                                    </div>
+                                    <!-- YEAR SELECTIONS -->
+                                    <div class="dropdown dropdown-choose-month">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            2022
+                                        </button>
+                                        <div class="dropdown-menu anos-menu">
+                                            <button class="dropdown-item" type="button">2022</button>
+                                            <button class="dropdown-item" type="button">2023</button>
+                                            <button class="dropdown-item" type="button">2024</button>
+                                            <button class="dropdown-item" type="button">2025</button>
+                                            <button class="dropdown-item" type="button">2026</button>
+                                            <button class="dropdown-item" type="button">2027</button>
+                                            <button class="dropdown-item" type="button">2028</button>
+                                            <button class="dropdown-item" type="button">2029</button>
+                                            <button class="dropdown-item" type="button">2030</button>
+                                            <button class="dropdown-item" type="button">2031</button>
+                                            <button class="dropdown-item" type="button">2032</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-number-container-pop-up name-card">
+                                    <h5>Nome do Titular</h5>
+                                    <input type="text" id="inputName" class="card-number-input"
+                                        placeholder="Nome do Titular">
+                                </div>
+                                <div class="save-card-button">
+                                    <input type="submit" value="Salvar" class="save-button"></input>
                                 </div>
                             </div>
-                            <div class="card-number-container-pop-up name-card">
-                                <h5>Nome do Titular</h5>
-                                <input type="text" id="inputName" class="card-number-input"
-                                    placeholder="Nome do Titular">
-                            </div>
-                        </div>
+                        </form>
                         <!-- PIX -->
                         <div class="visually-hidden pix-selected">
                             <div class="logo">
