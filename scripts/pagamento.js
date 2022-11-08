@@ -90,6 +90,12 @@ function creditCardSelected() {
     credit_card_selected[0].classList.remove("visually-hidden");
     pix_selected[0].classList.add("visually-hidden");
 }
+
+
+
+
+
+
 function pixSelected() {
     name_payment[0].innerHTML = "Pix";
     pix_selected[0].classList.remove("visually-hidden");
@@ -369,4 +375,32 @@ function limit(element) // limitar número de caracteres
 $(".dropdown-item").click(function(){
     $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="placeholder"></span>');
     $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-  });
+});
+
+
+
+const form = document.querySelector("#data-from-credit-card");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    numberCard = data.cardnumber;
+    numberForShow = numberCard[15] + numberCard[16] + numberCard[17] + numberCard[18] + numberCard[19];
+    
+    var visaImg = document.getElementsByClassName("visa-img");
+    var infoCardHidden = document.getElementsByClassName("card-number-hidden");
+    var infoCard = document.getElementsByClassName("final-card-number");
+    infoCard[0].innerHTML = numberForShow;
+    
+
+    visaImg[0].classList.remove("visually-hidden");
+    infoCardHidden[0].classList.remove("visually-hidden");
+    infoCard[0].classList.remove("visually-hidden");
+    
+    pop_up_payment.hide();
+}); 
+
+    
+
+
