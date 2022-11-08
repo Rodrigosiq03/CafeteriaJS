@@ -155,6 +155,12 @@ function creditCardSelected() {
   credit_card_selected[0].classList.remove("visually-hidden");
   pix_selected[0].classList.add("visually-hidden");
 }
+
+
+
+
+
+
 function pixSelected() {
   name_payment[0].innerHTML = "Pix";
   pix_selected[0].classList.remove("visually-hidden");
@@ -411,3 +417,56 @@ function goToMenuPage() {
 function goToCartPage() {
   window.location.href = "carrinho.html";
 }
+
+const cardnumber = document.getElementById('cardnumber');
+
+cardnumber.addEventListener('keyup', (e) => maskCardNumber(e.target.value));
+cardnumber.addEventListener('change' , (e) => maskCardNumber(e.target.value));
+
+const maskCardNumber = (value) => { // máscara para o número do cartão
+    value = value.replace(/[^0-9]+/g, '');
+    value = value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+    cardnumber.value = value
+}
+
+function limit(element) // limitar número de caracteres
+{
+    var max_chars = 19;
+
+    if(element.value.length > max_chars) {
+        element.value = element.value.substr(0, max_chars);
+    }
+}
+
+$(".dropdown-item").click(function(){
+    $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="placeholder"></span>');
+    $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+});
+
+
+
+const form = document.querySelector("#data-from-credit-card");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    numberCard = data.cardnumber;
+    numberForShow = numberCard[15] + numberCard[16] + numberCard[17] + numberCard[18] + numberCard[19];
+    
+    var visaImg = document.getElementsByClassName("visa-img");
+    var infoCardHidden = document.getElementsByClassName("card-number-hidden");
+    var infoCard = document.getElementsByClassName("final-card-number");
+    infoCard[0].innerHTML = numberForShow;
+    
+
+    visaImg[0].classList.remove("visually-hidden");
+    infoCardHidden[0].classList.remove("visually-hidden");
+    infoCard[0].classList.remove("visually-hidden");
+    
+    pop_up_payment.hide();
+}); 
+
+    
+
+
