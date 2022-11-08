@@ -18,14 +18,37 @@ function InitializeItensContainer() {
     let templateCopy = itemTemplate.content.cloneNode(true);
 
     templateCopy.querySelector("#item-name").textContent = item["name"];
-    templateCopy.querySelector("#price-item-quantity").textContent = item["price"];
-
+    templateCopy.querySelector("#price-item-quantity").textContent =
+      item["price"];
+    templateCopy.querySelector("#quantity-button").textContent =
+      item["quantity"];
     itensContainer.appendChild(templateCopy);
-
   });
 }
 
 InitializeItensContainer();
+
+function ChangeQuantityButton(buttonElement, quantity) {
+  let itemQuantityContainer =
+    buttonElement.parentNode.parentNode.parentNode.parentNode.parentNode;
+
+  let itemName = itemQuantityContainer.querySelector("#item-name").textContent;
+  let itemPrice = itemQuantityContainer.querySelector(
+    "#price-item-quantity"
+  ).textContent;
+  let itemQuantity = (itemQuantityContainer.querySelector(
+    "#quantity-button"
+  ).textContent = quantity);
+
+  const product = {
+    name: itemName,
+    price: itemPrice,
+    quantity: itemQuantity,
+    src:JSON.parse(localStorage.getItem(itemName))['src']
+  };
+
+  localStorage.setItem(itemName, JSON.stringify(product));
+}
 
 // MODALS
 unity_modal = document.getElementById("unityModal");

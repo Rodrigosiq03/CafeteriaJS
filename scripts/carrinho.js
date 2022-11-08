@@ -41,10 +41,11 @@ function cleanProductsCart() {
   listaProdutos.innerHTML = "";
 }
 
-function addToCart(productName, price, imageSrc) {
+function addToCart(productName, price, imageSrc, quantity) {
   const product = {
     name: productName,
     price: price,
+    quantity:quantity,
     src: imageSrc,
   };
   localStorage.setItem(productName, JSON.stringify(product));
