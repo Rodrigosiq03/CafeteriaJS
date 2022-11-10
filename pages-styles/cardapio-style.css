@@ -126,6 +126,7 @@ div p {
     background-color: var(--card);
     border: 2px solid var(--card);
     transition: transform .2s;
+    width: 100%;
 }
 .button-card:hover {
     border: 2px solid var(--amarelo);
@@ -136,7 +137,6 @@ div p {
     background-color: var(--card);
     border: none;
     border-radius: 20px;
-    width: 100%;
 }
 .card {
     background-color: var(--card);
