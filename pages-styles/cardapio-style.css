@@ -24,8 +24,8 @@
 }
 
 .bebidas {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     padding: 100px, 100px;
 }
 .precos-bebidas {
@@ -134,9 +134,9 @@ div p {
 .container-card {
     color: var(--branco);
     background-color: var(--card);
-    width: 1000px;
     border: none;
     border-radius: 20px;
+    width: 100%;
 }
 .card {
     background-color: var(--card);
