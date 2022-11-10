@@ -11,6 +11,22 @@ h1{
     text-align: center;
 } */
 
+a{
+    color: #F0DB4F;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: #F0DB4F;
+    font-weight: bolder;
+}
+
+grifado{
+    color: #F0DB4F;
+    font-weight: bold;
+}
+
+
 .rounded-logo {
     width: 300px;
     height: 300px;
