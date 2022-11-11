@@ -11,14 +11,15 @@ h1{
     text-align: center;
 } */
 
-a{
+.texto a{
     color: #F0DB4F;
     text-decoration: none;
     font-weight: bold;
 }
-a:hover{
+.texto a:hover{
     color: #F0DB4F;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 grifado{

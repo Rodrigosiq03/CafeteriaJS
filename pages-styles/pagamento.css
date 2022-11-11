@@ -674,3 +674,11 @@ input[type=number] {
     border: 2px solid var(--amarelo);
 }
 
+@media screen and (max-width: 660px) {
+    .container-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
