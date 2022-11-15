@@ -149,12 +149,14 @@ function creditCardSelected() {
   name_payment[0].innerHTML = "Cartão de Crédito";
   credit_card_selected[0].classList.remove("visually-hidden");
   pix_selected[0].classList.add("visually-hidden");
+  document.getElementsByClassName('on-delivery-selected')[0].classList.add("visually-hidden");
 }
 
 function pixSelected() {
   name_payment[0].innerHTML = "Pix";
   pix_selected[0].classList.remove("visually-hidden");
   credit_card_selected[0].classList.add("visually-hidden");
+  document.getElementsByClassName('on-delivery-selected')[0].classList.add("visually-hidden");
 }
 function onDelivery() {
   name_payment[0].innerHTML = "Pagamento na entrega";
