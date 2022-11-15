@@ -39,14 +39,14 @@ function CalculateTotalPrice() {
 }
 
 function InsertTotalPriceInHtmlPage() {
-  let totalPrice = `R$ ${CalculateTotalPrice()}`
+  let totalPrice = `R$ ${CalculateTotalPrice()}`;
   document.getElementById("total-price").innerText = totalPrice;
 
   const priceH3Pix = document.getElementById("price-h3-pix");
   const priceH3Entrega = document.getElementById("price-h3-entrega");
 
-  priceH3Pix.innerText = totalPrice
-  priceH3Entrega.innerText = totalPrice
+  priceH3Pix.innerText = totalPrice;
+  priceH3Entrega.innerText = totalPrice;
 }
 
 function ChangeQuantityButton(buttonElement, quantity) {
@@ -149,18 +149,24 @@ function creditCardSelected() {
   name_payment[0].innerHTML = "Cartão de Crédito";
   credit_card_selected[0].classList.remove("visually-hidden");
   pix_selected[0].classList.add("visually-hidden");
-  document.getElementsByClassName('on-delivery-selected')[0].classList.add("visually-hidden");
+  document
+    .getElementsByClassName("on-delivery-selected")[0]
+    .classList.add("visually-hidden");
 }
 
 function pixSelected() {
   name_payment[0].innerHTML = "Pix";
   pix_selected[0].classList.remove("visually-hidden");
   credit_card_selected[0].classList.add("visually-hidden");
-  document.getElementsByClassName('on-delivery-selected')[0].classList.add("visually-hidden");
+  document
+    .getElementsByClassName("on-delivery-selected")[0]
+    .classList.add("visually-hidden");
 }
 function onDelivery() {
   name_payment[0].innerHTML = "Pagamento na entrega";
-  document.getElementsByClassName('on-delivery-selected')[0].classList.remove("visually-hidden");
+  document
+    .getElementsByClassName("on-delivery-selected")[0]
+    .classList.remove("visually-hidden");
   credit_card_selected[0].classList.add("visually-hidden");
   pix_selected[0].classList.add("visually-hidden");
 }
@@ -168,7 +174,9 @@ function onDelivery() {
 function setHidden() {
   credit_card_selected[0].classList.add("visually-hidden");
   pix_selected[0].classList.add("visually-hidden");
-  document.getElementsByClassName('on-delivery-selected')[0].classList.add("visually-hidden");
+  document
+    .getElementsByClassName("on-delivery-selected")[0]
+    .classList.add("visually-hidden");
   name_payment[0].innerHTML = "Escolha aqui";
 }
 
@@ -465,4 +473,23 @@ form.addEventListener("submit", (e) => {
   infoCard[0].classList.remove("visually-hidden");
 
   pop_up_payment.hide();
+  SetPaymentMethodInfos("");
 });
+
+function hideCardInfos() {
+  var visaImg = document.getElementsByClassName("visa-img");
+  var infoCardHidden = document.getElementsByClassName("card-number-hidden");
+  var infoCard = document.getElementsByClassName("final-card-number");
+  infoCard[0].innerHTML = numberForShow;
+
+  visaImg[0].classList.add("visually-hidden");
+  infoCardHidden[0].classList.add("visually-hidden");
+  infoCard[0].classList.add("visually-hidden");
+}
+
+function SetPaymentMethodInfos(textToDisplay) {
+  const infoDiv = document.getElementById("infos-forma-pagamento");
+
+  infoDiv.innerText = textToDisplay;
+  pop_up_payment.hide();
+}

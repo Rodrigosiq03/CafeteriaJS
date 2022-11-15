@@ -95,11 +95,20 @@
                         <button class="edit-button" onclick="paymentModal()">Editar</button>
                     </div>
                     <div class="payment-information">
+
+                        <!-- Mostrar infos do cartão caso ele seja selecionado -->
                         <img src="/assets/images/pagamento/visa_logo.png" class="visa-img visually-hidden" alt="">
                         <div class="card-information">
                             <h3 class="card-number card-number-hidden visually-hidden">**** **** ****</h3>
                             <h3 class="final-card-number visually-hidden">1234</h3>
                         </div>
+                        <!-- Mostrar infos do cartão caso ele seja selecionado -->
+
+                        <!-- Mostrar infos caso outra opção seja selecionada -->
+                        <div id="infos-forma-pagamento"></div>
+                        <!-- Mostrar infos caso outra opção seja selecionada -->
+
+
                     </div>
                 </div>
                 <div class="itens-container">
@@ -157,8 +166,6 @@
                                     </div>
                                 </div>
                             </template>
-
-                            <!-- o item vem aqui, parça -->
 
                         </div>
                     </div>
@@ -416,6 +423,10 @@
                                 <h3>4 - Apenas aproxime a camera de seu celular para a leitura</h3>
                                 <h3>5 - Está feita sua compra!</h3>
                             </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="save-button save-card-button"
+                                    onclick="SetPaymentMethodInfos('Pix online');hideCardInfos()">Salvar</button>
+                            </div>
                         </div>
                         <!-- PAGAMENTO NA ENTREGA -->
                         <div class="visually-hidden on-delivery-selected">
@@ -425,15 +436,19 @@
                                 <h3 id="price-h3-entrega"></h3>
                             </div>
 
-                            Escolha forma de pagamento: <div class="dropdown">
+                            Escolha forma de pagamento:
+                            <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Nenhum Selecionado
                                 </button>
                                 <div class="dropdown-menu anos-menu">
-                                    <button class="dropdown-item" type="button">Pix</button>
-                                    <button class="dropdown-item" type="button">Dinheiro</button>
-                                    <button class="dropdown-item" type="button">Cartão</button>
+                                    <button class="dropdown-item" type="button"
+                                        onclick="SetPaymentMethodInfos('Pagar na entrega(Pix)')">Pix</button>
+                                    <button class="dropdown-item" type="button"
+                                        onclick="SetPaymentMethodInfos('Pagar na entrega(Dinheiro)')">Dinheiro</button>
+                                    <button class="dropdown-item" type="button"
+                                        onclick="SetPaymentMethodInfos('Pagar na entrega(Cartão)')">Cartão</button>
                                 </div>
                             </div>
                         </div>
