@@ -168,6 +168,7 @@ function onDelivery() {
 function setHidden() {
   credit_card_selected[0].classList.add("visually-hidden");
   pix_selected[0].classList.add("visually-hidden");
+  document.getElementsByClassName('on-delivery-selected')[0].classList.add("visually-hidden");
   name_payment[0].innerHTML = "Escolha aqui";
 }
 
