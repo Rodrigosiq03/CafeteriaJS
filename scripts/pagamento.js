@@ -49,6 +49,12 @@ function InsertTotalPriceInHtmlPage() {
   priceH3Entrega.innerText = totalPrice;
 }
 
+function CleanCart(){
+  localStorage.clear();
+  itensContainer.innerHTML = ''
+  
+}
+
 function ChangeQuantityButton(buttonElement, quantity) {
   let itemQuantityContainer =
     buttonElement.parentNode.parentNode.parentNode.parentNode.parentNode;
