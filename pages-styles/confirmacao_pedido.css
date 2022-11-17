@@ -76,3 +76,7 @@
     color: var(--amarelo);
     font-weight: bold;
 }
+
+.btn-ajuda{
+    background-color: #f0da4f;
+}
