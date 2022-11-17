@@ -73,80 +73,75 @@
         </nav>
     </header>
 
-    <div class="container img-container">
-        <div class="text-center">
-            <img src="../assets/logos/logo_st.png" class="rounded-logo" alt="Logo da CafeteriaJS">
+    <main>
+        <div class="container img-container">
+            <div class="text-center">
+                <img src="../assets/logos/logo_st.png" class="rounded-logo" alt="Logo da CafeteriaJS">
+            </div>
         </div>
-    </div>
-
-    <template id="card-produto-template">
-
-        <div class="container-div-card-cart">
-            <div class="container-card container-card-cart">
-                <div class="card card-cart">
-                    <div class="card-body card-cart-body">
-                        <div class="start-card">
-                            <img class="img-card-cart img-produto" src="" alt="">
-                            <h3 class="nome-produto"></h3>
-                        </div>
-                        <div class="end-card">
-                            <span>R$</span>
-                            <span class="preco-produto"></span>
+        <template id="card-produto-template">
+            <div class="container-div-card-cart">
+                <div class="container-card container-card-cart">
+                    <div class="card card-cart">
+                        <div class="card-body card-cart-body">
+                            <div class="start-card">
+                                <img class="img-card-cart img-produto" src="" alt="">
+                                <h3 class="nome-produto"></h3>
+                            </div>
+                            <div class="end-card">
+                                <span>R$</span>
+                                <span class="preco-produto"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="change-quantity-btn container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-1">
-                    <button onclick="AddQuantityItens(this, -1)">-</button>
-                    
-                </div>
-                <div class="col quantidade-itens" id="quantidade-itens">1</div>
-                <div class="col">
-                    <button onclick="AddQuantityItens(this, 1)">+</button>
-                </div>
-            </div>
-        </div>
-
-    </template>
-
-    <div id="itens-da-lista" class="d-flex justify-content-start">
-        <ul id="lista-produtos-carrinho"></ul>
-    </div>
-
-    <div class="d-flex justify-content-center">
-
-        <button type="button" class="button-card" onclick="itensPopUp()">
-
-            <div class="container-card add-btn">
-                <div class="card">
-                    <div class="card-body add-itens-body">
-                        <div class="icon-add">
-                            <i class="fa-sharp fa-solid fa-plus content-icon"></i>
-                        </div>
-                        <div class="add-itens-text">
-                            Adicionar itens
-                        </div>
+            <div class="change-quantity-btn container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-1">
+                        <button onclick="AddQuantityItens(this, -1)">-</button>
+        
+                    </div>
+                    <div class="col quantidade-itens" id="quantidade-itens">1</div>
+                    <div class="col">
+                        <button onclick="AddQuantityItens(this, 1)">+</button>
                     </div>
                 </div>
             </div>
-        </button>
-    </div>
-    <div class="container footer-buttons">
+        </template>
+        <div id="itens-da-lista" class="d-flex justify-content-start">
+            <ul id="lista-produtos-carrinho"></ul>
+        </div>
         <div class="d-flex justify-content-center">
-            <div class="row teste">
-                <div class="col-auto">
-                    <button type="button" class="btn btn-esvaziar" onclick="cleanProductsCart()">Esvaziar
-                        Carrinho</button>
+            <button type="button" class="button-card" onclick="itensPopUp()">
+                <div class="container-card add-btn">
+                    <div class="card">
+                        <div class="card-body add-itens-body">
+                            <div class="icon-add">
+                                <i class="fa-sharp fa-solid fa-plus content-icon"></i>
+                            </div>
+                            <div class="add-itens-text">
+                                Adicionar itens
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <button type="button" class="btn btn-continuar" onclick="goToPagamentoPage()">Continuar</button>
+            </button>
+        </div>
+        <div class="container footer-buttons">
+            <div class="d-flex justify-content-center">
+                <div class="row teste">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-esvaziar" onclick="cleanProductsCart()">Esvaziar
+                            Carrinho</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-continuar" onclick="goToPagamentoPage()">Continuar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <section>
         <!-- MODAL FOR ITENS TO CART -->
         <div class="modal fade" id="itens-pop-up" tabindex="-1">
