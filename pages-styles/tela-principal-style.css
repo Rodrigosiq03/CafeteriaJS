@@ -1,15 +1,3 @@
-/* main{
-    padding: 10px;
-}
-
-#texto-sobre-nos{
-    width: 50%;
-    text-align: justify;
-}
-
-h1{
-    text-align: center;
-} */
 
 .texto a{
     color: #F0DB4F;
@@ -54,7 +42,8 @@ grifado{
 }
 .title-pratos {
     display: flex;
-    color: black;
+    color: #F0DB4F;
+    text-shadow: -1px -1px 0 #cfbd45, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     
 }
 article {
