@@ -201,11 +201,11 @@ function selectData(element) {
     date_3.classList.remove("card-date-button-selected");
     date_4.classList.remove("card-date-button-selected");
     var weekday = document.getElementById("weekday");
-    weekday.innerHTML = "Terça-feira,";
+    weekday.innerHTML = "Quinta-feira,";
     var day = document.getElementById("day-for-data");
-    day.innerHTML = "4";
+    day.innerHTML = "8";
     var month = document.getElementById("month-for-data");
-    month.innerHTML = "Outubro";
+    month.innerHTML = "Dezembro";
     container_date.classList.remove("visually-hidden");
   } else if (element.id == "date-2") {
     date_1.classList.remove("card-date-button-selected");
@@ -213,11 +213,11 @@ function selectData(element) {
     date_3.classList.remove("card-date-button-selected");
     date_4.classList.remove("card-date-button-selected");
     var weekday = document.getElementById("weekday");
-    weekday.innerHTML = "Quarta-feira,";
+    weekday.innerHTML = "Sexta-feira,";
     var day = document.getElementById("day-for-data");
-    day.innerHTML = "5";
+    day.innerHTML = "9";
     var month = document.getElementById("month-for-data");
-    month.innerHTML = "Outubro";
+    month.innerHTML = "Dezembro";
     container_date.classList.remove("visually-hidden");
   } else if (element.id == "date-3") {
     date_1.classList.remove("card-date-button-selected");
@@ -225,11 +225,11 @@ function selectData(element) {
     date_3.classList.add("card-date-button-selected");
     date_4.classList.remove("card-date-button-selected");
     var weekday = document.getElementById("weekday");
-    weekday.innerHTML = "Quinta-feira,";
+    weekday.innerHTML = "Sábado,";
     var day = document.getElementById("day-for-data");
-    day.innerHTML = "6";
+    day.innerHTML = "10";
     var month = document.getElementById("month-for-data");
-    month.innerHTML = "Outubro";
+    month.innerHTML = "Dezembro";
     container_date.classList.remove("visually-hidden");
   } else {
     date_1.classList.remove("card-date-button-selected");
@@ -237,11 +237,11 @@ function selectData(element) {
     date_3.classList.remove("card-date-button-selected");
     date_4.classList.add("card-date-button-selected");
     var weekday = document.getElementById("weekday");
-    weekday.innerHTML = "Sexta-feira,";
+    weekday.innerHTML = "Domingo,";
     var day = document.getElementById("day-for-data");
-    day.innerHTML = "7";
+    day.innerHTML = "11";
     var month = document.getElementById("month-for-data");
-    month.innerHTML = "Outubro";
+    month.innerHTML = "Dezembro";
     container_date.classList.remove("visually-hidden");
   }
 }
